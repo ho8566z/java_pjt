@@ -1,9 +1,19 @@
 package com.office.dbex.member;
 
-public class MemberService implements IMember {
-	
-	MemberDao memberDao = new MemberDao();
+import com.office.dbex.session.SessionClass;
 
+public class MemberService implements IMember {
+	/*
+	IMemberDao memberDao = new MemberDao();
+	IMemberDao memberDao = new MemberDaoForOracle();
+	*/
+	
+	IMemberDao memberDao;
+	
+	public MemberService(IMemberDao iMemberDao) {
+		this.memberDao = iMemberDao;
+	}
+	
 	// Sign_Up
 	public int doSignUp(MemberDto memberDto) {
 		System.out.println("[MemberService] doSignUp()");
@@ -36,8 +46,7 @@ public class MemberService implements IMember {
 			break;
 			
 		}
-		
-		
+
 		return result;
 	}
 
@@ -80,6 +89,41 @@ public class MemberService implements IMember {
 			
 		}
 	
+	}
+
+	// Modify
+	public int doModify(MemberDto memberDtoForModify) {
+		System.out.println("[MemberService] doModify()");
+		
+		memberDtoForModify.setMemId(SessionClass.getInstance().getSignInedMemId());
+		
+		int result = memberDao.updateMembere(memberDtoForModify);
+		
+		if (result > 0) {
+			System.out.println("[MemberService] MEMBER MODIFY SUCCESS");
+		
+		} else {
+			System.out.println("[MemberService] MEMBER MODIFY FAIL");
+		}
+		
+		return result;
+	}
+
+	// DELETE
+	public int doRemove() {
+		System.out.println("[MemberService] doRemove()");
+		
+		int result = memberDao.deleteMemberByMemId(SessionClass.getInstance().getSignInedMemId());
+
+		if (result > 0) {
+			System.out.println("[MemberService] MEMBER DELETE SUCCESS");
+			
+		} else {
+			System.out.println("[MemberService] MEMBER DELETE FAIL");
+			
+		}
+		
+		return result;
 	}
 
 }

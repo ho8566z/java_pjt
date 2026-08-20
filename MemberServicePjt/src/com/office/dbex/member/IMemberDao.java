@@ -6,4 +6,13 @@ public interface IMemberDao {
 	final String USER = "root";
 	final String PASSWORD = "1234";
 
+	
+	public int insertNewMember(MemberDto memberDto);
+
+	public MemberDto selectMemberByMemId(String memberId);
+
+	public int updateMembere(MemberDto memberDto);
+
+	public int deleteMemberByMemId(String MemId);
+	
 }
