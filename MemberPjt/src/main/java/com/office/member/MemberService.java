@@ -4,6 +4,8 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 public class MemberService {
+	
+	MemberDao memberDao = null;
 
 	public int memberRegistConfirm(HttpServletRequest request, HttpServletResponse response) {
 		System.out.println("[MemberService] memberRegistConfirm()");
@@ -20,7 +22,18 @@ public class MemberService {
 		
 		MemberDto memberDto = new MemberDto(memId, memPw, memMail, memPhone);
 		
-		return 0;
+		memberDao = new MemberDao();
+		int result = memberDao.insertNewMember(memberDto);
+		
+		if (result > 0) {
+			System.out.println("[MemberService] NEW MEMBER SIGNUP SUCCESS");
+			
+		} else {
+			System.out.println("[MemberService] NEW MEMBER SIGNUP FAIL");
+			
+		}
+		
+		return result;
 		
 	}
 	

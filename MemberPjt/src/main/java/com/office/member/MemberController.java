@@ -1,6 +1,8 @@
 package com.office.member;
 
 import java.io.IOException;
+
+import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
@@ -32,6 +34,7 @@ public class MemberController extends HttpServlet {
 		// command : /member_signup_confirm.dw
 		
 		MemberService memberService = null;
+		String nextPage = null;
 		
 		if (command.equals("/member_signup_confirm.dw")) {
 			System.out.println("Sign UP");
@@ -39,9 +42,21 @@ public class MemberController extends HttpServlet {
 			memberService = new MemberService();
 			int result = memberService.memberRegistConfirm(request, response);
 			
+			if (result > 0) {
+				System.out.println("[MemberController] NEW MEMBER SIGNUP SUCCESS");
+				nextPage = "views/member_signup_ok.jsp";
+				
+			} else {
+				System.out.println("[MemberController] NEW MEMBER SIGNUP FAIL");
+				nextPage = "views/member_signup_ng.jsp";
+			}
+			
 		} else if (command.equals("/member_signin_confirm.dw")) {
 			System.out.println("Sign IN");
 		}
+		
+		RequestDispatcher dispatcher = request.getRequestDispatcher(nextPage);
+		dispatcher.forward(request, response);
 		
 	}
 
