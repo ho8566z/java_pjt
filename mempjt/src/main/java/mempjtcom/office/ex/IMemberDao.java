@@ -11,4 +11,6 @@ public interface IMemberDao {
 
 	public MemberDto selectMemberByMemId(String memId);
 
+	public int updateMemberByMemNo(MemberDto memberDto);
+
 }

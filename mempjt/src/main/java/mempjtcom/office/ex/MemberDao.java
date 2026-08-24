@@ -8,7 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class MemberDao implements IMemberDao {
-
+	
 	@Override
 	public int insertNewMember(MemberDto memberDto) {
 		System.out.println("[MemberDao] insertNewMember()");
@@ -18,28 +18,27 @@ public class MemberDao implements IMemberDao {
 		int result = -1;
 		
 		try {
-			// 1.드라이버 로딩 at 메모리
+			// 1. 드라이버 로딩 at 메모리
 			Class.forName(DRIVER);
 			
-			// 2.다리 건설
+			// 2. 다리 건설 == Connection
 			conn = DriverManager.getConnection(URL, USER, PASSWORD);
 			
-			// 3.작업명세서(SQL)
-			String sql = "insert into tbl_member(memId, memPw, memMail, memPhone) "
-					+ "VALUES(?, ?, ?, ?)";
+			// 3. 작업 명세서 == SQL
+			String sql =  "INSERT INTO tbl_member(memId, memPw, memMail, memPhone) "
+						+ "VALUES(?, ?, ?, ?)";
 			
-			// 4.일꾼 섭외 == PreparedStatement
+			// 4. 일꾼 섭외 == PreparedStatment
 			pstmt = conn.prepareStatement(sql);
 			
-			// 5.일꾼에게 데이터 주입
+			// 5. 일꾼한테 데이터 주입 == set
 			pstmt.setString(1, memberDto.getMemId());
 			pstmt.setString(2, memberDto.getMemPw());
 			pstmt.setString(3, memberDto.getMemMail());
 			pstmt.setString(4, memberDto.getMemPhone());
 			
-			// 6.작업지시
+			// 6. 작업 지시!!
 			result = pstmt.executeUpdate();		// 생성된 행(row) 개수 반환
-			
 			
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -52,41 +51,43 @@ public class MemberDao implements IMemberDao {
 				
 			} catch (Exception e2) {
 				e2.printStackTrace();
+				
 			}
+			
 		}
 		
 		return result;
+		
 	}
 
-	
 	@Override
 	public MemberDto selectMemberByMemId(String id) {
 		System.out.println("[MemberDao] selectMemberByMemId()");
-
+		
 		Connection conn = null;
 		PreparedStatement pstmt = null;
 		ResultSet rs = null;
 		List<MemberDto> memberDtos = new ArrayList<MemberDto>();
 		
 		try {
-			// 1.드라이버 로딩 at 메모리
+			// 1. 드라이버 로딩 at 메모리
 			Class.forName(DRIVER);
 			
-			// 2.다리 건설
+			// 2. 다리 건설 == Connection
 			conn = DriverManager.getConnection(URL, USER, PASSWORD);
 			
-			// 3.작업명세서(SQL)
-			String sql = "SELECT * FROM TBL_MEMBER "
-						+ "WHERE memId =?";
+			// 3. 작업 명세서 == SQL
+			String sql =  "SELECT * FROM TBL_MEMBER "
+						+ "WHERE memId = ?";
 			
-			// 4.일꾼 섭외 == PreparedStatement
+			// 4. 일꾼 섭외 == PreparedStatment
 			pstmt = conn.prepareStatement(sql);
 			
-			// 5.일꾼에게 데이터 주입
+			// 5. 일꾼한테 데이터 주입 == set
 			pstmt.setString(1, id);
 			
-			// 6.작업지시
-			rs = pstmt.executeQuery();		// 생성된 행(row) 개수 반환
+			// 6. 작업 지시!!
+			rs = pstmt.executeQuery();
 			
 			while (rs.next()) {
 				
@@ -108,14 +109,15 @@ public class MemberDao implements IMemberDao {
 								memModDate);
 				
 				memberDtos.add(dto);
+				
 			}
+			
 			
 		} catch (Exception e) {
 			e.printStackTrace();
 			
 		} finally {
 			
-			// 7.외부자원 해제
 			try {
 				if (rs != null) rs.close();
 				if (pstmt != null) pstmt.close();
@@ -125,9 +127,74 @@ public class MemberDao implements IMemberDao {
 				e2.printStackTrace();
 				
 			}
+			
 		}
 		
+//		if (memberDtos.size() > 0) {
+//			return memberDtos.get(0);
+//		} else {
+//			return null;
+//		}
+		
 		return memberDtos.size() > 0 ? memberDtos.get(0) : null;
+		
+	}
+
+	@Override
+	public int updateMemberByMemNo(MemberDto memberDto) {
+		System.out.println("[MemberDao] updateMemberByMemNo()");
+		
+		Connection conn = null;
+		PreparedStatement pstmt = null;
+		int result = -1;
+		
+		try {
+			// 1. 드라이버 로딩 at 메모리
+			Class.forName(DRIVER);
+			
+			// 2. 다리 건설 == Connection
+			conn = DriverManager.getConnection(URL, USER, PASSWORD);
+			
+			// 3. 작업 명세서 == SQL
+			String sql =  "UPDATE "
+							+ "tbl_member "
+						+ "SET "
+							+ "memPw = ?, "
+							+ "memMail = ?, "
+							+ "memPhone = ? "
+						+ "WHERE "
+							+ "memNo = ?";
+			
+			// 4. 일꾼 섭외 == PreparedStatment
+			pstmt = conn.prepareStatement(sql);
+			
+			// 5. 일꾼한테 데이터 주입 == set
+			pstmt.setString(1, memberDto.getMemPw());
+			pstmt.setString(2, memberDto.getMemMail());
+			pstmt.setString(3, memberDto.getMemPhone());
+			pstmt.setInt(4, memberDto.getMemNo());
+			
+			// 6. 작업 지시!!
+			result = pstmt.executeUpdate();		// 생성된 행(row) 개수 반환
+			
+		} catch (Exception e) {
+			e.printStackTrace();
+			
+		} finally {
+			
+			try {
+				if (pstmt != null) pstmt.close();
+				if (conn != null) conn.close();
+				
+			} catch (Exception e2) {
+				e2.printStackTrace();
+				
+			}
+			
+		}
+		
+		return result;
+		
 	}
 
 }
