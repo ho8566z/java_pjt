@@ -20,7 +20,7 @@
 	}
 	
 	td:first-child {
-		width: 200px;
+		width: 385px;
 		text-align: right;
 	}
 	
@@ -52,7 +52,7 @@ function vaccineForm() {
 		alert('Please Enter PHONE!!');
 		form.fvp_phone.focus();
 		
-	} else if (form.fvp_location_no.value === '') {
+	} else if (form.fv_location_no.value === '') {
 		alert('Please Select LOCATION!!');
 		form.fvp_location_no.focus();
 		
@@ -101,7 +101,7 @@ function vaccineForm() {
 		 	<tr>
 		 		<td>접종처 번호</td>
 		 		<td>
-		 			<select name="fvp_location_no">
+		 			<select name="fv_location_no">
 		 				<option value="">-- 접종처 선택 --</option>
 		 				<option value="1001">A접종처</option>
 		 				<option value="1002">B접종처</option>

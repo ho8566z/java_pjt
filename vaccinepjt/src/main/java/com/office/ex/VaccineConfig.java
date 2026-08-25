@@ -12,4 +12,6 @@ public class VaccineConfig {
 	final static public String VIEW_PREFIX = "views/";
 	final static public String VIEW_SUFFIX = ".jsp";
 	
+	final static public String VACCINE_DELETE = "/vaccine_delete.vc";
+	
 }

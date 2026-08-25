@@ -1,5 +1,7 @@
 package com.office.ex;
 
+import java.util.List;
+
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
@@ -16,11 +18,11 @@ public class VaccineService {
 		String ss_number = request.getParameter("ss_number");
 		String fvp_mail = request.getParameter("fvp_mail");
 		String fvp_phone = request.getParameter("fvp_phone");
-		String fvp_location_no = request.getParameter("fvp_location_no");
+		String fv_location_no = request.getParameter("fv_location_no");
 		String fv_type = request.getParameter("fv_type");
 		
 		VaccineDto vaccineDto = 
-				new VaccineDto(fvp_name, ss_number, fvp_mail, fvp_phone, fvp_location_no, fv_type);
+				new VaccineDto(fvp_name, ss_number, fvp_mail, fvp_phone, fv_location_no, fv_type);
 		
 		int result = vaccineDao.insertVaccineInjection(vaccineDto);
 		
@@ -34,6 +36,30 @@ public class VaccineService {
 		
 		return result;
 		
+	}
+
+	public void getVaccineInjections(HttpServletRequest request, HttpServletResponse response) {
+		System.out.println(CLASS_NAME.concat("getVaccineInjections()"));
+		
+		List<VaccineDto> vaccineDtos = vaccineDao.selectVaccineInjections();
+		request.setAttribute("vaccineDtos", vaccineDtos);
+		
+	}
+
+	public int removeVaccineInjectionByFvpNo(HttpServletRequest request, HttpServletResponse response) {
+		System.out.println(CLASS_NAME.concat("removeVaccineInjectionByFvpNo()"));
+		
+		int fvp_no = Integer.parseInt(request.getParameter("fvp_no"));
+		
+		int result = vaccineDao.deleteVaccineInjectionByFvpNo(fvp_no);
+		
+		if (result > 0) {
+			System.out.println(CLASS_NAME.concat("VACCINE INJECTION DLETET SUCCESS"));
+		} else {
+			System.out.println(CLASS_NAME.concat("VACCINE INJECTION DLETET FAIL"));
+		}
+		
+		return result;
 	}
 
 }

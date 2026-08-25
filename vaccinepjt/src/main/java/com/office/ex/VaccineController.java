@@ -26,6 +26,7 @@ public class VaccineController extends HttpServlet {
 		String command = requestURI.substring(contextPath.length());
 		String nextPage = null;
 		VaccineService vaccineService = null;
+
 		
 		switch (command) {
 		case VaccineConfig.VACCINE_RESISTER_FORM:
@@ -55,7 +56,34 @@ public class VaccineController extends HttpServlet {
 		case VaccineConfig.VACCINE_LIST:
 			System.out.println(CLASS_NAME.concat(VaccineConfig.VACCINE_LIST));
 			
+			vaccineService = new VaccineService();
+			vaccineService.getVaccineInjections(request, response);
+
+			nextPage = generateView("vaccine_records");
+			
 			break;
+			
+		case VaccineConfig.VACCINE_DELETE:
+			System.out.println(CLASS_NAME.concat(VaccineConfig.VACCINE_DELETE));
+			
+//			String fvp_no = request.getParameter("fvp_no");
+//			System.out.println("fvp_no : " + fvp_no);
+			
+			vaccineService = new VaccineService();
+			int resultForDelete = vaccineService.removeVaccineInjectionByFvpNo(request, response);
+			
+			if (resultForDelete > 0) {
+				System.out.println(CLASS_NAME.concat("VACCINE INJECTION DLETET SUCCESS"));
+			} else {
+				System.out.println(CLASS_NAME.concat("VACCINE INJECTION DLETET FAIL"));
+			}
+			
+//			nextPage = generateView("vaccine_records");
+			// 리다이렉트
+			response.sendRedirect(request.getContextPath().concat(VaccineConfig.VACCINE_LIST));
+			
+			return;
+
 		}
 		
 		RequestDispatcher dispatcher = request.getRequestDispatcher(nextPage);
@@ -78,4 +106,12 @@ public class VaccineController extends HttpServlet {
 	}
 	
 	
+	
+	
+	
+	
+	
+	
+	
+
 }
