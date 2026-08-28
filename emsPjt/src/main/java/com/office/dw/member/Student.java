@@ -1,17 +1,17 @@
 package com.office.dw.member;
 
 public class Student {
-	
+
 	private String sNum;
 	private String sId;
 	private String sPw;
 	private String sName;
-	private String sAge;
-	private String sGender;
+	private int sAge;
+	private char sGender;
 	private String sMajor;
 	
 	public Student(String sNum, String sId, String sPw, 
-			String sName, String sAge, String sGender, String sMajor) {
+			String sName, int sAge, char sGender, String sMajor) {
 		this.sNum = sNum;
 		this.sId = sId;
 		this.sPw = sPw;
@@ -24,42 +24,55 @@ public class Student {
 	public String getsNum() {
 		return sNum;
 	}
+
 	public void setsNum(String sNum) {
 		this.sNum = sNum;
 	}
+
 	public String getsId() {
 		return sId;
 	}
+
 	public void setsId(String sId) {
 		this.sId = sId;
 	}
+
 	public String getsPw() {
 		return sPw;
 	}
+
 	public void setsPw(String sPw) {
 		this.sPw = sPw;
 	}
+
 	public String getsName() {
 		return sName;
 	}
+
 	public void setsName(String sName) {
 		this.sName = sName;
 	}
-	public String getsAge() {
+
+	public int getsAge() {
 		return sAge;
 	}
-	public void setsAge(String sAge) {
+
+	public void setsAge(int sAge) {
 		this.sAge = sAge;
 	}
-	public String getsGender() {
+
+	public char getsGender() {
 		return sGender;
 	}
-	public void setsGender(String sGender) {
+
+	public void setsGender(char sGender) {
 		this.sGender = sGender;
 	}
+
 	public String getsMajor() {
 		return sMajor;
 	}
+
 	public void setsMajor(String sMajor) {
 		this.sMajor = sMajor;
 	}

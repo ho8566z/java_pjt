@@ -1,5 +1,6 @@
 package com.office.dw.member.service;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 
@@ -21,14 +22,14 @@ public class EMSInformationService {
 	private Map<String, DBConnectionInfo> dbInfos;
 	
 	public void printEMSInformation() {
-		System.out.println("EMS INFORMATION START ====================");
+		System.out.println("EMS INFORMATION START -------------");
 		String devPeriod = sYear + "/" + sMonth + "/" + sDay + " ~ " + eYear + "/" + eMonth + "/" + eDay;
 		System.out.println(info + "(" + devPeriod + ")");
 		System.out.println(copyRight);
 		System.out.println(ver);
 		System.out.println("Developers: " + developers);
 		System.out.println("Administrators: " + administrators);
-		System.out.println("EMS INFORMATION END ====================");
+		System.out.println("EMS INFORMATION END -------------");
 	}
 
 	public String getInfo() {
