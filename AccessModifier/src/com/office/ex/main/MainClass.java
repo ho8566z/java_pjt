@@ -2,6 +2,9 @@ package com.office.ex.main;
 
 import com.office.ex.controller.PayController;
 
+/**
+ * 접근 제어자 실습의 시작점. PayController 를 실행한다.
+ */
 public class MainClass {
 
 	/*
