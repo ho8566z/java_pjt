@@ -16,6 +16,9 @@ public class Daeri {
 		
 	}
 	
+	/**
+	 * 급여를 변경한다. 직급이 CEO 일 때만 변경된다.
+	 */
 	public void setMoney(int money, String grade) {
 		if (grade.equals("CEO")) {
 			
