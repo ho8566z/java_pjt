@@ -17,6 +17,10 @@ public class PayService {
 		
 	}
 	
+	/**
+	 * 해당 월의 급여를 직급별(대리, 과장, 차장)로 지급한다.
+	 * 대리 급여액은 변경 권한이 있는 CEO 로 먼저 조정한다.
+	 */
 	public void pay(int month) {
 		
 //		daeri.money = 1100000;
