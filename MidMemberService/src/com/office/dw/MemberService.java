@@ -66,7 +66,7 @@ public class MemberService {
 		
 	}
 	
-	/ 로그인 로직을 재사용해 ID, PW 일치 여부만 확인
+	// 로그인 로직을 재사용해 ID, PW 일치 여부만 확인
 	public boolean verifyByMemIdAndMemPw(String id, String pw) {
 		System.out.println("[MemberService] verifyByMemIdAndMemPw()");
 		
