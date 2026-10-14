@@ -11,6 +11,7 @@ public class MainClass {
 
 	public static void main(String[] args) {
 		
+		/ 스프링 컨테이너 생성 : applicationContext.xml 의 빈 정의를 읽어 객체를 만든다
 		GenericXmlApplicationContext ctx = 
 				new GenericXmlApplicationContext("classpath:applicationContext.xml");
 		
