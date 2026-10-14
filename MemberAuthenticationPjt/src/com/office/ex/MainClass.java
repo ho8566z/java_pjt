@@ -57,6 +57,7 @@ public class MainClass {
       
   
       
+      // 입력이 끝났으므로 Scanner 자원 해제
       scanner.close();
    }
    
