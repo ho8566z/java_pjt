@@ -6,6 +6,7 @@ import java.sql.PreparedStatement;
 
 public class MemberDao {
 
+	/ 로컬 MySQL(db_member) 접속 정보
 	String url = "jdbc:mysql://127.0.0.1:3306/db_member";
 	String user = "root";
 	String password = "1234";
