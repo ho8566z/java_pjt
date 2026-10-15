@@ -7,10 +7,10 @@ public class AuthenticationDto {
    private String mail;
    
    public AuthenticationDto(String id, String pw, String mail) {
-	this.id = id;
-	this.pw = pw;
-	this.mail = mail;
-}
+      this.id = id;
+      this.pw = pw;
+      this.mail = mail;
+   }
 
    public String getId() {
       return id;
