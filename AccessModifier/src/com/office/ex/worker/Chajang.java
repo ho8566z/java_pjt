@@ -10,6 +10,9 @@ public class Chajang {
 		
 	}
 	
+	/**
+	 * 차장의 급여 지급 내역을 출력한다.
+	 */
 	public void pay() {
 		System.out.println(name + "님 노고에 감사드립니다.");
 		System.out.println(money + "원, 지급완료");
