@@ -1,5 +1,8 @@
 package com.office.dw;
 
+/**
+ * 덧셈 계산기.
+ */
 public class CalAdd implements ICalculator {
 	
 	public CalAdd() {
