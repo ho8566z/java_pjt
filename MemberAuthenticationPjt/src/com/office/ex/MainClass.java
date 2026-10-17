@@ -2,6 +2,10 @@ package com.office.ex;
 
 import java.util.Scanner;
 
+/**
+ * 회원 인증 실습의 시작점.
+ * 콘솔로 ID, PW, 메일을 입력받아 ID/PW/메일 방식으로 인증한다.
+ */
 public class MainClass {
 
    public static void main(String[] args) {
