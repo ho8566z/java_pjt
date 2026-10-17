@@ -1,5 +1,9 @@
 package com.office.ex;
 
+/**
+ * 인증 요청을 받아 전달된 인증 방식에 위임하는 서비스.
+ * 구체적인 인증 방식은 알지 못하고 IAuthentication 인터페이스에만 의존한다.
+ */
 public class Service {
 	
 	/**
