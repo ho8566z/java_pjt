@@ -1,5 +1,9 @@
 package com.office.ex;
 
+/**
+ * 아이디, 비밀번호, 메일을 모두 확인해 회원을 인증하는 IAuthentication 구현체.
+ * gildong, 1234, gildong@gmail.com 이 모두 일치할 때만 인증에 성공한다.
+ */
 public class AuthenticationByIdPwMail implements IAuthentication {
 
    @Override
