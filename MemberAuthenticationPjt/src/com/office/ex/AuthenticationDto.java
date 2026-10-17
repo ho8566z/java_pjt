@@ -1,5 +1,8 @@
 package com.office.ex;
 
+/**
+ * 인증에 사용할 회원 정보(아이디, 비밀번호, 메일)를 담는 DTO.
+ */
 public class AuthenticationDto {
    
    private String id;
