@@ -1,5 +1,9 @@
 package com.office.ex;
 
+/**
+ * 전달받은 ICal 구현체에 계산을 맡기는 계산기.
+ * 덧셈, 뺄셈 등 연산 종류는 ICal 구현 클래스가 결정한다.
+ */
 public class Calculator {
 	
 	/**
