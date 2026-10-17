@@ -1,5 +1,9 @@
 package com.office.ex.worker;
 
+/**
+ * 차장 직급의 급여 정보를 가진 클래스.
+ * 급여(money)는 private 이라 클래스 밖에서 직접 바꿀 수 없다.
+ */
 public class Chajang {
 	
 	public String name = "Kim Chajang";
