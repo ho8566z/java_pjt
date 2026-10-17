@@ -1,5 +1,9 @@
 package com.office.ex.worker;
 
+/**
+ * 대리 직급의 급여 정보를 가진 클래스.
+ * 급여(money)는 private 이라 CEO 권한의 setMoney() 로만 변경할 수 있다.
+ */
 public class Daeri {
 	
 	public String name = "Kim Daeri";
