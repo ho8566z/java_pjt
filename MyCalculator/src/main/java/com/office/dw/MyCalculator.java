@@ -12,7 +12,10 @@ public class MyCalculator {
 	 */
 	
 	
-	// 전략패턴
+	/**
+	 * 전달받은 계산 방식(ICalculator 구현체)으로 두 정수를 계산해 결과를 출력한다.
+	 * 전략 패턴이라 연산을 추가해도 이 메서드는 바뀌지 않는다.
+	 */
 	public void calculate(int firstNum, int secondNum, ICalculator calculator) {
 		int value = calculator.doOperation(firstNum, secondNum);
 		System.out.println("result : " + value);
