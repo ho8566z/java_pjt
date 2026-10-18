@@ -13,7 +13,7 @@ public interface IMember {
 	final public int MEMBER_SIGN_UP_SUCCESS = 1;
 	final public int MEMBER_SIGN_UP_FAIL = 0;
 
-	// SIGN_UP RESULT
+	// SIGN_IN RESULT
 	final public boolean MEMBER_SIGN_IN_SUCCESS = true;
 	final public boolean MEMBER_SIGN_IN_FAIL 	= false;
 		
