@@ -1,6 +1,5 @@
 package com.office.dw.member.service;
 
-import com.office.dw.member.Student;
 import com.office.dw.member.dao.StudentDao;
 
 public class StudentDeleteService {
@@ -25,8 +24,7 @@ public class StudentDeleteService {
 	}
 	
 	private boolean verify(String sNum) {
-		Student student = studentDao.select(sNum);
-		return student != null ? true : false;
+		return studentDao.select(sNum) != null;
 				
 	}
 	
