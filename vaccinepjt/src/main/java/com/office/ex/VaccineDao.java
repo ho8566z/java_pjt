@@ -61,6 +61,7 @@ public class VaccineDao implements IVaccineDao {
 		
 	}
 
+	@Override
 	public List<VaccineDto> selectVaccineInjections() {
 		System.out.println(CLASS_NAME.concat("selectVaccineInjections()"));
 		
@@ -133,6 +134,7 @@ public class VaccineDao implements IVaccineDao {
 	}
 
 	
+	@Override
 	public int deleteVaccineInjectionByFvpNo(int fvp_no) {
 		System.out.println(CLASS_NAME.concat("deleteVaccineInjectionByFvpNo()"));
 		
