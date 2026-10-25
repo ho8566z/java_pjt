@@ -7,6 +7,9 @@ import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 독감 예방접종 신청 정보를 DB(JDBC)에 저장·조회·삭제하는 DAO.
+ */
 public class VaccineDao implements IVaccineDao {
 
 	final private String CLASS_NAME = "[VaccineDao] ";
