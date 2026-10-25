@@ -14,6 +14,12 @@ public class VaccineDao implements IVaccineDao {
 
 	final private String CLASS_NAME = "[VaccineDao] ";
 	
+	/**
+	 * 예방접종 신청자 정보를 tbl_flu_vaccin_person 에 저장한다.
+	 *
+	 * @param vaccineDto 신청자 이름, 주민번호, 메일, 전화번호, 접종 장소·종류
+	 * @return 저장된 행 수, 오류가 나면 -1
+	 */
 	@Override
 	public int insertVaccineInjection(VaccineDto vaccineDto) {
 		System.out.println(CLASS_NAME.concat("insertVaccineInjection()"));
@@ -61,6 +67,11 @@ public class VaccineDao implements IVaccineDao {
 		
 	}
 
+	/**
+	 * 신청자와 접종 장소·백신 종류를 조인해 전체 신청 목록을 조회한다.
+	 *
+	 * @return 신청 목록, 오류가 나면 빈 목록
+	 */
 	@Override
 	public List<VaccineDto> selectVaccineInjections() {
 		System.out.println(CLASS_NAME.concat("selectVaccineInjections()"));
@@ -134,6 +145,12 @@ public class VaccineDao implements IVaccineDao {
 	}
 
 	
+	/**
+	 * 신청 번호로 예방접종 신청 정보를 삭제한다.
+	 *
+	 * @param fvp_no 삭제할 신청 번호
+	 * @return 삭제된 행 수, 오류가 나면 -1
+	 */
 	@Override
 	public int deleteVaccineInjectionByFvpNo(int fvp_no) {
 		System.out.println(CLASS_NAME.concat("deleteVaccineInjectionByFvpNo()"));
