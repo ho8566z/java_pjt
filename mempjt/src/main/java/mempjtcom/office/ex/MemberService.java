@@ -67,9 +67,7 @@ public class MemberService {
 	public MemberDto getCurrentSigninedMember(String signinedMemId) {
 		System.out.println("[MemberService] getCurrentSigninedMember()");
 		
-		MemberDto signinedMemberDto = memberDao.selectMemberByMemId(signinedMemId);
-		
-		return signinedMemberDto;
+		return memberDao.selectMemberByMemId(signinedMemId);
 		
 	}
 
