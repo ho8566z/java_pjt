@@ -22,7 +22,6 @@ public class MemberService {
 		
 		MemberDto memberDto = new MemberDto(memId, memPw, memMail, memPhone);
 		
-		memberDao = new MemberDao();
 		int result = memberDao.insertNewMember(memberDto);
 		
 		if (result > 0) {
