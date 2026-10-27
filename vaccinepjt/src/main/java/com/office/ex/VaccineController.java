@@ -73,9 +73,9 @@ public class VaccineController extends HttpServlet {
 			int resultForDelete = vaccineService.removeVaccineInjectionByFvpNo(request, response);
 			
 			if (resultForDelete > 0) {
-				System.out.println(CLASS_NAME.concat("VACCINE INJECTION DLETET SUCCESS"));
+				System.out.println(CLASS_NAME.concat("VACCINE INJECTION DELETE SUCCESS"));
 			} else {
-				System.out.println(CLASS_NAME.concat("VACCINE INJECTION DLETET FAIL"));
+				System.out.println(CLASS_NAME.concat("VACCINE INJECTION DELETE FAIL"));
 			}
 			
 //			nextPage = generateView("vaccine_records");
