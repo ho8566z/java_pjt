@@ -75,8 +75,7 @@ public class VaccineController extends HttpServlet {
 				System.out.println(CLASS_NAME.concat("VACCINE INJECTION DELETE FAIL"));
 			}
 			
-//			nextPage = generateView("vaccine_records");
-			// 리다이렉트
+			// 삭제 후 목록으로 리다이렉트
 			response.sendRedirect(request.getContextPath().concat(VaccineConfig.VACCINE_LIST));
 			
 			return;
