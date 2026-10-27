@@ -66,9 +66,6 @@ public class VaccineController extends HttpServlet {
 		case VaccineConfig.VACCINE_DELETE:
 			System.out.println(CLASS_NAME.concat(VaccineConfig.VACCINE_DELETE));
 			
-//			String fvp_no = request.getParameter("fvp_no");
-//			System.out.println("fvp_no : " + fvp_no);
-			
 			vaccineService = new VaccineService();
 			int resultForDelete = vaccineService.removeVaccineInjectionByFvpNo(request, response);
 			
