@@ -100,14 +100,5 @@ public class VaccineController extends HttpServlet {
 				.concat(VaccineConfig.VIEW_SUFFIX);
 		
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
 
 }
