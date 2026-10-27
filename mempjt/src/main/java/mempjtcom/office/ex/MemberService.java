@@ -42,8 +42,6 @@ public class MemberService {
 		String memId = request.getParameter("memId");
 		String memPw = request.getParameter("memPw");
 		
-		// MemberDto memberDto = new MemberDto(memId, memPw);
-		
 		MemberDto selectedMemberDtoByMemId = memberDao.selectMemberByMemId(memId);
 		
 		if (selectedMemberDtoByMemId != null) {
