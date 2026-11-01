@@ -8,7 +8,7 @@ public class MainClass {
 		
 		Singleton singleton2 = Singleton.getInstance();
 		
-		System.out.println(singleton1 == singleton1);		// true
+		System.out.println(singleton1 == singleton2);		// true
 		
 		
 		singleton1.inceaseCount(); 		// count : 1
