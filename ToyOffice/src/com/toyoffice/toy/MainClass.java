@@ -1,5 +1,8 @@
 package com.toyoffice.toy;
 
+/**
+ * 장난감 실습의 시작점.\n각 장난감의 동작을 따로 실행한 뒤, IToy 배열에 담아 doWalk() 를 반복 호출한다.
+ */
 public class MainClass {
 	
 	public static void main(String[] args) {
