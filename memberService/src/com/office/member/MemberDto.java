@@ -1,5 +1,9 @@
 package com.office.member;
 
+/**
+ * 회원 정보를 담는 DTO.
+ * 아이디, 비밀번호, 메일을 생성자로 받아 보관한다.
+ */
 public class MemberDto {
 	
 //	final int MEMID = 1;
