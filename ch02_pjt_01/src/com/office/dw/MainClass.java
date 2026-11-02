@@ -1,5 +1,9 @@
 package com.office.dw;
 
+/**
+ * 계산기 실습의 시작점.
+ * CalAssembler 가 객체를 만들어 연결하도록 맡겨 제어의 역전(IoC)을 보여준다.
+ */
 public class MainClass {
 	
 	public static void main(String[] args) {
