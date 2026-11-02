@@ -4,6 +4,11 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Vector;
 
+/**
+ * 자식 식당 클래스.
+ * FatherRestaurant 를 상속하고 IFatherRestaurant 를 구현한다.
+ * makeBokkeumbap(int) 는 family 값에 따라 부모 방식과 자식 방식 중 하나를 고른다.
+ */
 public class ChildResturant 
 				extends FatherRestaurant
 				implements IFatherRestaurant {
