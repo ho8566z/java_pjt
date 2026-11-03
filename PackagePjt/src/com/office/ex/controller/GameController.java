@@ -11,6 +11,7 @@ public class GameController {
 		GameService gameService = new GameService();
 		
 		Scanner scanner = new Scanner(System.in);
+		// 입력한 번호에 따라 서비스의 기능을 고른다
 		int selectedNumber = scanner.nextInt();
 		
 		switch (selectedNumber) {
@@ -24,6 +25,7 @@ public class GameController {
 		
 		}
 		
+		// 입력이 끝났으므로 Scanner 를 닫는다
 		scanner.close();
 		
 	}
