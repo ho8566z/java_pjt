@@ -1,5 +1,6 @@
 package com.office.dw.member;
 
+// DB 접속 정보(주소·아이디·비밀번호)를 담는 클래스
 public class DBConnectionInfo {
 
 	private String url;
