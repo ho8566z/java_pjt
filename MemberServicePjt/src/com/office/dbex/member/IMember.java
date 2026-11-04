@@ -1,5 +1,6 @@
 package com.office.dbex.member;
 
+/** 회원 서비스에서 쓰는 메뉴 번호와 가입·로그인 결과 상수를 모아 둔 인터페이스. */
 public interface IMember {
 	
 	// MENU
