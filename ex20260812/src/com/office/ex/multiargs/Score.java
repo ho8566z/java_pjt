@@ -66,6 +66,12 @@ public class Score {
 	 * (int ...score, int classNumber) 					== X
 	 */
 	
+	/**
+	 * 반 번호와 가변인자로 받은 점수들의 총점과 평균을 반별로 출력한다.
+	 *
+	 * @param classNumber 반 번호
+	 * @param scores 학생 점수들(개수 제한 없음)
+	 */
 	public void printStudentsTotalAndAverageScore(int classNumber, int ...scores) {
 		
 //		int totalScore = 0;
