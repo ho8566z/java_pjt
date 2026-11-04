@@ -65,6 +65,12 @@ public class CoolingSystem {
 		return targetTemperature;
 	}
 
+	/**
+	 * 희망 온도를 설정한다. 전원이 꺼져 있으면 함께 켠다.
+	 * 허용 범위는 18~30도이며, 범위를 벗어난 값은 가장 가까운 한계값으로 보정한다.
+	 *
+	 * @param targetTemperature 설정할 희망 온도
+	 */
 	public void setTargetTemperature(int targetTemperature) {
 		
 		if (!power) power = true;
