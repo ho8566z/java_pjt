@@ -34,7 +34,7 @@ public class MemberDao implements IMemberDao {
 						+ "VALUES(?,?,?,?)";
 			
 			// 3.일꾼
-			pstmt = conn.prepareCall(sql);
+			pstmt = conn.prepareStatement(sql);
 			
 			// 4.데이터 주입
 			pstmt.setString(1, memberDto.getMemId());
