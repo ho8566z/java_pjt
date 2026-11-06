@@ -78,7 +78,7 @@ public class MemberController implements IMember, IConfig {
 					session.setSignInedMemId(memId);
 					
 				} else {
-					System.out.println("[MemberService] MEMBER SIGN_IN FAIL");
+					System.out.println("[MemberController] MEMBER SIGN_IN FAIL");
 					
 					SessionClass session = SessionClass.getInstance();
 					session.setSignInedMemId(null);
