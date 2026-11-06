@@ -103,10 +103,10 @@ public class MemberController implements IMember, IConfig {
 				int resultForModify = memberService.doModify(memberDtoForModify);	// 0:fail, 1:success
 				
 				if (resultForModify > 0) {
-					System.out.println("[MemberController] NEW MEMBER MODIFY SUCCESS");
+					System.out.println("[MemberController] MEMBER MODIFY SUCCESS");
 				
 				} else {
-					System.out.println("[MemberController] NEW MEMBER MODIFY FAIL");
+					System.out.println("[MemberController] MEMBER MODIFY FAIL");
 					
 				}
 				
@@ -117,12 +117,12 @@ public class MemberController implements IMember, IConfig {
 				int resultForRemove = memberService.doRemove();
 				
 				if (resultForRemove > 0) {
-					System.out.println("[MemberController] NEW MEMBER DELETE SUCCESS");
+					System.out.println("[MemberController] MEMBER DELETE SUCCESS");
 					
 					SessionClass.getInstance().setSignInedMemId(null);
 				
 				} else {
-					System.out.println("[MemberController] NEW MEMBER DELETE FAIL");
+					System.out.println("[MemberController] MEMBER DELETE FAIL");
 					
 				}
 				
