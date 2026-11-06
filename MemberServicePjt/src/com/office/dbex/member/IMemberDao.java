@@ -18,6 +18,6 @@ public interface IMemberDao {
 	public int updateMember(MemberDto memberDto);
 
 	// 아이디로 회원을 삭제하고 삭제된 행 수를 돌려준다
-	public int deleteMemberByMemId(String MemId);
+	public int deleteMemberByMemId(String memId);
 	
 }
