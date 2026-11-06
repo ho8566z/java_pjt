@@ -97,7 +97,7 @@ public class MemberService implements IMember {
 		
 		memberDtoForModify.setMemId(SessionClass.getInstance().getSignInedMemId());
 		
-		int result = memberDao.updateMembere(memberDtoForModify);
+		int result = memberDao.updateMember(memberDtoForModify);
 		
 		if (result > 0) {
 			System.out.println("[MemberService] MEMBER MODIFY SUCCESS");

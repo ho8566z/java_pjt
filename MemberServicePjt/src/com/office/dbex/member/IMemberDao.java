@@ -15,7 +15,7 @@ public interface IMemberDao {
 	public MemberDto selectMemberByMemId(String memberId);
 
 	// 회원 정보를 수정하고 수정된 행 수를 돌려준다
-	public int updateMembere(MemberDto memberDto);
+	public int updateMember(MemberDto memberDto);
 
 	// 아이디로 회원을 삭제하고 삭제된 행 수를 돌려준다
 	public int deleteMemberByMemId(String MemId);

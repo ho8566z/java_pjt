@@ -135,8 +135,8 @@ public class MemberDao implements IMemberDao {
 
 
 	@Override
-	public int updateMembere(MemberDto memberDto) {
-		System.out.println("[MemberDao] updateMembere()");
+	public int updateMember(MemberDto memberDto) {
+		System.out.println("[MemberDao] updateMember()");
 		
 		Connection conn = null;
 		PreparedStatement pstmt = null;

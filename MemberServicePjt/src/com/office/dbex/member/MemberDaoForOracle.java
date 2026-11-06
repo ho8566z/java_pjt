@@ -16,7 +16,7 @@ public class MemberDaoForOracle implements IMemberDao {
 	}
 
 	@Override
-	public int updateMembere(MemberDto memberDto) {
+	public int updateMember(MemberDto memberDto) {
 		// TODO Auto-generated method stub
 		return 0;
 	}
