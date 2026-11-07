@@ -10,9 +10,9 @@ import com.office.ex.worker.Gwajang;
  */
 public class PayService {
 	
-	Daeri daeri;
-	Gwajang gwajang;
-	Chajang chajang;
+	private Daeri daeri;
+	private Gwajang gwajang;
+	private Chajang chajang;
 	
 	public PayService() {
 		daeri = new Daeri();
