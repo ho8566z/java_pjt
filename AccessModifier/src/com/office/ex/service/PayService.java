@@ -4,6 +4,10 @@ import com.office.ex.worker.Chajang;
 import com.office.ex.worker.Daeri;
 import com.office.ex.worker.Gwajang;
 
+/**
+ * 대리, 과장, 차장의 급여 지급을 처리하는 서비스.
+ * 직급별 Worker 객체를 생성해 두고 pay() 로 한 번에 지급한다.
+ */
 public class PayService {
 	
 	Daeri daeri;
