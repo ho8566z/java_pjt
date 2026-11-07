@@ -15,7 +15,7 @@ public class MainClass {
       Service service = new Service();
       
       // 2 ID, PW, MAIL
-      System.out.print("Enter ID & PW");
+      System.out.print("Enter ID, PW & Mail");
       String id = scanner.nextLine();
       String pw = scanner.nextLine();
       String mail = scanner.nextLine();
