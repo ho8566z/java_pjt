@@ -37,16 +37,6 @@ public class MemberDao {
 	public void deleteMemberByMemId(String memId) {
 		System.out.println("[MemberDao] deleteMemberByMemId()");
 		
-//		for (int i = 0; i < memberDB.size(); i++) {
-//			MemberDto dto = memberDB.get(i);
-//			if (dto.memId.equals(memId)) {
-//				memberDB.remove(i);
-//				
-//				System.out.println("memberDB.size() : " + memberDB.size());
-//				
-//			}
-//		}
-		
 		memberDB.remove(memId);
 		
 	}
