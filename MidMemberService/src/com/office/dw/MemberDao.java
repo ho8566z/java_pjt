@@ -15,7 +15,6 @@ public class MemberDao {
 	public void insertNewMember(MemberDto memberDto) {
 		System.out.println("[MemberDao] insertNewMember()");
 		
-//		memberDB.add(memberDto);
 		memberDB.put(memberDto.memId, memberDto);
 		
 	}
