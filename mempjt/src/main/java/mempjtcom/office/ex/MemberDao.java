@@ -130,12 +130,6 @@ public class MemberDao implements IMemberDao {
 			
 		}
 		
-//		if (memberDtos.size() > 0) {
-//			return memberDtos.get(0);
-//		} else {
-//			return null;
-//		}
-		
 		return memberDtos.size() > 0 ? memberDtos.get(0) : null;
 		
 	}
