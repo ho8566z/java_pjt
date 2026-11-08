@@ -4,11 +4,7 @@ import java.util.HashMap;
 
 public class MemberDao {
 	
-//	java.util.ArrayList<MemberDto> memberDB = new java.util.ArrayList<MemberDto>();
-	// 클래스 풀네임을 쓰는 방법(지양할 것)
-	// ctrl + shift + o = 자동으로 import 하고, 사용하지 않는 import는 삭제한다.
-	// 1145 이미지 참조
-//	ArrayList<MemberDto> memberDB = new ArrayList<MemberDto>();
+	// 클래스 풀네임 대신 import 를 쓴다. (ctrl + shift + o 로 import 정리)
 	
 	HashMap<String, MemberDto> memberDB =  new HashMap<String, MemberDto>();
 
