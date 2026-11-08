@@ -22,15 +22,6 @@ public class MemberDao {
 	public MemberDto selectMemberDtoByMemId(String memId) {
 		System.out.println("[MemberDao] selectMemberDtoByMemId()");
 		
-//		for (int i = 0; i < memberDB.size(); i++) {
-//			MemberDto dto = memberDB.get(i);
-//			if (dto.memId.equals(memId)) {
-//				return dto;
-//			}
-//		}
-//		
-//		return null;
-		
 		MemberDto memberDto =  memberDB.get(memId);
 		return memberDto;
 		
