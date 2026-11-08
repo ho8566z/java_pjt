@@ -30,19 +30,6 @@ public class MemberDao {
 	public void updateMemberForMailAndPhone(MemberDto memberDto) {
 		System.out.println("[MemberDao] updateMemberForMailAndPhone()");
 		
-//		for (int i = 0; i < memberDB.size(); i++) {
-//			MemberDto dto = memberDB.get(i);
-//			if (dto.memId.equals(memberDto.memId)) {
-//				dto.memMail = memberDto.memMail;
-//				dto.memPhone = memberDto.memPhone;
-//				
-//				System.out.println("Mail : " + dto.memMail);
-//				System.out.println("Phone : " + dto.memPhone);
-//				
-//				break;
-//			}
-//		}
-		
 		memberDB.put(memberDto.memId, memberDto);
 		
 	}
