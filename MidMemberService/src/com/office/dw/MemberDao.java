@@ -25,6 +25,7 @@ public class MemberDao {
 		
 	}
 
+	/ 같은 아이디로 다시 저장해서 메일·전화번호를 덮어쓴다
 	public void updateMemberForMailAndPhone(MemberDto memberDto) {
 		System.out.println("[MemberDao] updateMemberForMailAndPhone()");
 		
