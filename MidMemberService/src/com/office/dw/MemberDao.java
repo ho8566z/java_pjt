@@ -33,6 +33,7 @@ public class MemberDao {
 		
 	}
 
+	/ 아이디에 해당하는 회원을 저장소에서 지운다
 	public void deleteMemberByMemId(String memId) {
 		System.out.println("[MemberDao] deleteMemberByMemId()");
 		
