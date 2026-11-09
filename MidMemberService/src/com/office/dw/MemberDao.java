@@ -8,6 +8,7 @@ public class MemberDao {
 	
 	HashMap<String, MemberDto> memberDB =  new HashMap<String, MemberDto>();
 
+	/ 새 회원을 아이디(memId)를 키로 해서 저장한다
 	public void insertNewMember(MemberDto memberDto) {
 		System.out.println("[MemberDao] insertNewMember()");
 		
