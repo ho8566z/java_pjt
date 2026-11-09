@@ -16,6 +16,7 @@ public class MemberDao {
 		
 	}
 
+	/ 아이디로 회원 한 명을 찾아 돌려준다 (없으면 null)
 	public MemberDto selectMemberDtoByMemId(String memId) {
 		System.out.println("[MemberDao] selectMemberDtoByMemId()");
 		
