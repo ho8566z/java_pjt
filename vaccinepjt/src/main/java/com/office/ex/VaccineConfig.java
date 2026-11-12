@@ -1,5 +1,6 @@
 package com.office.ex;
 
+/** 예방접종 기능의 요청 경로(.vc)와 뷰 경로를 모아 둔 상수 클래스. */
 public class VaccineConfig {
 
 	final static public String HOME = "/";
