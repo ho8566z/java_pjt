@@ -2,6 +2,7 @@ package com.office.dw.member.service;
 
 import com.office.dw.member.dao.StudentDao;
 
+/** 학번으로 학생 정보를 삭제하는 서비스. */
 public class StudentDeleteService {
 
 	private StudentDao studentDao;
