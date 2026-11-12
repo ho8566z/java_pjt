@@ -19,6 +19,7 @@ public class CalAssembler {
 		assemble();
 	}
 
+	// 같은 두 수(10, 5)로 덧셈·뺄셈·곱셈·나눗셈을 차례로 실행한다
 	private void assemble() {
 		
 		myCalculator.calculate(10, 5, calAdd);
