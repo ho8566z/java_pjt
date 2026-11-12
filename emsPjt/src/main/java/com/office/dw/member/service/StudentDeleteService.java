@@ -24,6 +24,7 @@ public class StudentDeleteService {
 		
 	}
 	
+	// 삭제하기 전에 해당 학번의 학생이 있는지 확인한다
 	private boolean verify(String sNum) {
 		return studentDao.select(sNum) != null;
 				
