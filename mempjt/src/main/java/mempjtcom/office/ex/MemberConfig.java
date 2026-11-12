@@ -1,5 +1,6 @@
 package mempjtcom.office.ex;
 
+/** 회원 기능의 요청 경로, 뷰 경로, 세션 키를 모아 둔 상수 클래스. */
 public class MemberConfig {
 
 	final static public String MEMBER_SIGNUP_FORM = "/member_signup_form.mem";
