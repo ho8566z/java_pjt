@@ -12,6 +12,7 @@ public class MemberConfig {
 	final static public String MEMBER_MODIFY_FORM = "/member_modify_form.mem";
 	final static public String MEMBER_MODIFY_CONFIRM = "/member_modify_confirm.mem";
 	
+	// 뷰 파일은 views 폴더 아래의 .jsp 파일을 사용한다
 	final static public String DEFAULT_VIEW_PATH = "views";
 	
 	final static public String DEFAULT_VIEW_SUFFIX = ".jsp";
