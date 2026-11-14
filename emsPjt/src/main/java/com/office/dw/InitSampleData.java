@@ -1,5 +1,9 @@
 package com.office.dw;
 
+/**
+ * EMS 에서 쓰는 학생 샘플 데이터를 보관한다.
+ * 학번, 아이디, 이름 등 항목별 배열을 getter/setter 로 주고받는다.
+ */
 public class InitSampleData {
 
 	/*
