@@ -6,6 +6,10 @@ import java.util.Map;
 
 import com.office.dw.member.DBConnectionInfo;
 
+/**
+ * EMS 의 버전, 개발 기간, 개발자, 관리자, DB 접속 정보를 출력하는 서비스.
+ * printEMSInformation() 이 모든 정보를 콘솔에 차례로 보여 준다.
+ */
 public class EMSInformationService {
 
 	private String info;
