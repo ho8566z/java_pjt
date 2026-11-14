@@ -1,5 +1,9 @@
 package mempjtcom.office.ex;
 
+/**
+ * 회원 한 명의 정보를 담는 DTO.
+ * 아이디와 비밀번호만 받는 생성자는 로그인에, 전체 필드 생성자는 조회에 쓴다.
+ */
 public class MemberDto {
 	
 	private int memNo;
