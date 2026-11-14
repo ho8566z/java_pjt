@@ -1,5 +1,9 @@
 package com.office.dbex.member;
 
+/**
+ * 회원 정보를 DB 와 주고받을 때 쓰는 DTO.
+ * 번호, 아이디, 비밀번호, 메일, 전화번호와 등록·수정일을 가진다.
+ */
 public class MemberDto {
 	
 	private int memNo;
