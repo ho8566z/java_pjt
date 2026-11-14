@@ -1,5 +1,9 @@
 package com.office.ex;
 
+/**
+ * 상속(Inheritance) 실습의 시작점.
+ * 부모의 속성과 기능을 자식이 물려받는 방식을 주석의 설명과 함께 확인한다.
+ */
 public class MainClass {
 	
 	public static void main(String[] args) {
