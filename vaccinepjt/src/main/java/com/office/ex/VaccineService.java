@@ -5,6 +5,10 @@ import java.util.List;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
+/**
+ * 백신 접종 등록과 조회를 처리하는 서비스.
+ * 요청 파라미터를 VaccineDto 로 묶어 VaccineDao 에 넘기고 결과를 request 에 담는다.
+ */
 public class VaccineService {
 
 	final private String CLASS_NAME = "[VaccineService] ";
