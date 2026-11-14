@@ -1,5 +1,9 @@
 package com.office.dw.member;
 
+/**
+ * EMS 에서 관리하는 학생 한 명의 정보.
+ * 학번, 아이디, 비밀번호, 이름, 나이, 성별, 전공을 가진다.
+ */
 public class Student {
 
 	private String sNum;
