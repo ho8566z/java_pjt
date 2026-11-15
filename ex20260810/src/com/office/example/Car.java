@@ -1,5 +1,8 @@
 package com.office.example;
 
+/**
+ * 자동차의 길이·가격·배기량을 필드로 갖고 생성자·메서드 오버로딩을 연습하는 클래스.
+ */
 public class Car {
 	
 	// 멤버 필드
