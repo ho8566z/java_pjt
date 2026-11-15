@@ -8,6 +8,9 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
+/**
+ * *.vc 요청을 받아 명령에 맞는 VaccineService 를 호출하고 화면으로 이동시키는 서블릿.
+ */
 @WebServlet("*.vc")
 public class VaccineController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
