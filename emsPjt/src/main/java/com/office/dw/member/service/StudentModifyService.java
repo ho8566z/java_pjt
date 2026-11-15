@@ -3,6 +3,9 @@ package com.office.dw.member.service;
 import com.office.dw.member.Student;
 import com.office.dw.member.dao.StudentDao;
 
+/**
+ * 학생 정보를 수정하는 서비스. 등록된 학생일 때만 수정하고, 없으면 안내 문구를 출력한다.
+ */
 public class StudentModifyService {
 
 	private StudentDao studentDao;
