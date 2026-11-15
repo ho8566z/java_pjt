@@ -7,6 +7,9 @@ import com.office.dw.member.service.EMSInformationService;
 import com.office.dw.member.service.PrintStudentInformationService;
 import com.office.dw.member.service.StudentRegisterService;
 
+/**
+ * 스프링 컨테이너에서 서비스 빈을 꺼내 샘플 학생 등록, 학생 추가, 목록·시스템 정보 출력을 차례로 실행한다.
+ */
 public class MainClass {
 
 	public static void main(String[] args) {
