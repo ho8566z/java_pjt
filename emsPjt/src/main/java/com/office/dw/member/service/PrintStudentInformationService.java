@@ -6,6 +6,9 @@ import java.util.Set;
 
 import com.office.dw.member.Student;
 
+/**
+ * StudentAllSelectService 로 전체 학생을 가져와 한 명씩 콘솔에 출력하는 서비스.
+ */
 public class PrintStudentInformationService {
 
 	private StudentAllSelectService allSelectService;
