@@ -1,5 +1,8 @@
 package com.office.ex;
 
+/**
+ * 백신 접종자, 접종 장소, 백신 종류 테이블의 컬럼 값을 한데 담아 옮기는 DTO.
+ */
 public class VaccineDto {
 
 	// tbl_flu_vaccin_person
