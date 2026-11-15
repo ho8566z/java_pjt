@@ -1,5 +1,8 @@
 package com.office.ex.overloading;
 
+/**
+ * 인사말 출력 메서드를 매개변수 목록만 달리해 오버로딩하는 실습 클래스.
+ */
 public class Greet {
 	
 	/*
