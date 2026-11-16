@@ -2,6 +2,9 @@ package com.office.dw;
 
 import java.util.Scanner;
 
+/**
+ * 콘솔 메뉴로 회원 가입·로그인·수정·삭제를 입력받아 MemberService 에 전달하는 컨트롤러.
+ */
 public class MemberController {
 	
 	final int MEMBER_SIGN_UP 		= 1;
@@ -11,6 +14,9 @@ public class MemberController {
 	final int MEMBER_SYSTEM_OUT 	= 99;
 	
 	
+	/**
+	 * 99(SYSTEM_OUT)를 입력할 때까지 메뉴를 반복해서 보여주고 선택에 맞는 기능을 실행한다.
+	 */
 	public void execute() {
 		System.out.println("[MemberController] execute()");
 		
