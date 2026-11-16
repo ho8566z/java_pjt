@@ -39,6 +39,7 @@ public class MemberService {
 		
 	}
 
+	// MODIFY (ID, PW 인증에 성공하면 메일·전화번호를 수정)
 	public void modify(MemberDto memberDto) {
 		System.out.println("[MemberService] modify()");
 		
@@ -54,6 +55,7 @@ public class MemberService {
 		
 	}
 
+	// DELETE (ID, PW 인증에 성공하면 회원을 삭제)
 	public void delete(MemberDto memberDto) {
 		System.out.println("[MemberService] delete()");
 		
