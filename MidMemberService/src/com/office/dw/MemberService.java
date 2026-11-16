@@ -44,10 +44,10 @@ public class MemberService {
 		System.out.println("[MemberService] modify()");
 		
 		// 인증 : ID, PW
-		boolean resultForAutentication = verifyByMemIdAndMemPw(memberDto.memId, memberDto.memPw);
+		boolean resultForAuthentication = verifyByMemIdAndMemPw(memberDto.memId, memberDto.memPw);
 		
 		// 업데이트 : Mail, Phone
-		if (resultForAutentication) {
+		if (resultForAuthentication) {
 			// 업데이트 실시
 			memberDao.updateMemberForMailAndPhone(memberDto);
 			
@@ -60,9 +60,9 @@ public class MemberService {
 		System.out.println("[MemberService] delete()");
 		
 		// 인증 : ID, PW
-		boolean resultForAutentication = verifyByMemIdAndMemPw(memberDto.memId, memberDto.memPw);
+		boolean resultForAuthentication = verifyByMemIdAndMemPw(memberDto.memId, memberDto.memPw);
 		
-		if (resultForAutentication) {
+		if (resultForAuthentication) {
 			memberDao.deleteMemberByMemId(memberDto.memId);
 		}
 		
