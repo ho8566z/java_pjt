@@ -25,9 +25,15 @@ public class SessionClass {
 	}
 
 	
+	/**
+	 * 로그인한 회원의 ID 를 돌려준다. 로그인하지 않았으면 null 이다.
+	 */
 	public String getSignInedMemId() {
 		return signInedMemId;
 	}
+	/**
+	 * 로그인한 회원의 ID 를 저장한다. null 을 넣으면 로그아웃 상태가 된다.
+	 */
 	public void setSignInedMemId(String signInedMemId) {
 		this.signInedMemId = signInedMemId;
 	}
