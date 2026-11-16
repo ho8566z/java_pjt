@@ -15,17 +15,26 @@ public class MemberDto {
 	private String memModDate;
 	
 	
+	/**
+	 * 값이 없는 빈 회원 객체를 만든다.
+	 */
 	public MemberDto() {
 		
 	}
 	
 	
+	/**
+	 * 아이디와 비밀번호만 가진 회원 객체를 만든다. 로그인할 때 쓴다.
+	 */
 	public MemberDto(String memId, String memPw) {
 		this.memId = memId;
 		this.memPw = memPw;
 	}
 
 
+	/**
+	 * 가입할 때 입력받는 아이디, 비밀번호, 메일, 전화번호로 회원 객체를 만든다.
+	 */
 	public MemberDto(String memId, String memPw, String memMail, String memPhone) {
 		this.memId = memId;
 		this.memPw = memPw;
@@ -34,6 +43,9 @@ public class MemberDto {
 	}
 
 
+	/**
+	 * 번호와 등록·수정일까지 모든 필드를 채운 회원 객체를 만든다. DB 조회 결과를 담을 때 쓴다.
+	 */
 	public MemberDto(int memNo, String memId, String memPw, String memMail, String memPhone, String memRegDate,
 			String memModDate) {
 		this.memNo = memNo;
