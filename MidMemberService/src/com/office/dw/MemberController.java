@@ -46,7 +46,6 @@ public class MemberController {
 				System.out.println("Please Input new Member Phone");
 				memPhone = scanner.nextLine();
 				
-//				memberService = new MemberService();
 				memberService.doSignUp(new MemberDto(memId, memPw, memMail, memPhone));
 				
 				break;
@@ -59,7 +58,6 @@ public class MemberController {
 				System.out.println("Please Input Member PW");
 				memPw = scanner.nextLine();
 				
-//				memberService = new MemberService();
 				memberService.doSignIn(new MemberDto(memId, memPw, null, null));
 				
 				break;
