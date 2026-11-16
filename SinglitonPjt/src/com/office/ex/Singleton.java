@@ -10,6 +10,9 @@ public class Singleton {
 	
 	private Singleton() {}
 	
+	/**
+	 * 하나뿐인 Singleton 객체를 돌려준다. 처음 호출할 때만 객체를 만든다.
+	 */
 	public static Singleton getInstance() {
 		if (singleton == null) {
 			singleton = new Singleton();
@@ -19,11 +22,17 @@ public class Singleton {
 	
 	
 	
+	/**
+	 * 카운트를 1 늘린다.
+	 */
 	public void inceaseCount() {
 		count++;
 	}
 
 	
+	/**
+	 * 지금까지 센 카운트를 돌려준다.
+	 */
 	public int getCount() {
 		return count;
 	}
