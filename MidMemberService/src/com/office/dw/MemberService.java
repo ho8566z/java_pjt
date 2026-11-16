@@ -1,5 +1,8 @@
 package com.office.dw;
 
+/**
+ * 회원 가입·로그인·수정·삭제 규칙을 처리하고 저장은 MemberDao 에 맡기는 서비스.
+ */
 public class MemberService {
 	
 	MemberDao memberDao = new MemberDao();
