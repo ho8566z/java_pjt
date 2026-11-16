@@ -15,7 +15,7 @@ public class MemberService {
 		
 	}
 
-	// SIGN_IN (인증(Yes or No) : Autentication // 인가(권한) : Athurization)
+	// SIGN_IN (인증(Yes or No) : Authentication // 인가(권한) : Authorization)
 	public boolean doSignIn(MemberDto memberDto) {
 		System.out.println("[MemberService] doSignIn()");
 		
