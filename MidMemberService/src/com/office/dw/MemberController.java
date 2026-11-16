@@ -26,13 +26,13 @@ public class MemberController {
 		MemberService memberService = new MemberService();
 		
 		while (systemFlag) {
-			System.out.println("1.SIGIN_UP  2.SIGN_IN  3.MODIFY  4.DELETE  99.SYSTEM_OUT");
+			System.out.println("1.SIGN_UP  2.SIGN_IN  3.MODIFY  4.DELETE  99.SYSTEM_OUT");
 			
 			int userSelectedMenuNumber = scanner.nextInt();
 			scanner.nextLine();
 			
 			switch (userSelectedMenuNumber) {
-			case MEMBER_SIGN_UP:			// SIGIN_UP
+			case MEMBER_SIGN_UP:			// SIGN_UP
 				
 				System.out.println("Please Input new Member ID");
 				memId = scanner.nextLine();
