@@ -2,6 +2,9 @@ package com.office.dw;
 
 import java.util.HashMap;
 
+/**
+ * 회원 정보를 HashMap(아이디 → MemberDto)에 저장하는 메모리 저장소.
+ */
 public class MemberDao {
 	
 	// 클래스 풀네임 대신 import 를 쓴다. (ctrl + shift + o 로 import 정리)
