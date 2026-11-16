@@ -8,7 +8,6 @@ public class MemberService {
 	public void doSignUp(MemberDto memberDto) {
 		System.out.println("[MemberService] doSignUp()");
 		
-//		memberDao = new MemberDao();
 		memberDao.insertNewMember(memberDto);
 		
 	}
@@ -17,7 +16,6 @@ public class MemberService {
 	public boolean doSignIn(MemberDto memberDto) {
 		System.out.println("[MemberService] doSignIn()");
 		
-//		memberDao = new MemberDao();
 		MemberDto selectMemberDto = memberDao.selectMemberDtoByMemId(memberDto.memId);
 		
 		if (selectMemberDto != null) {
