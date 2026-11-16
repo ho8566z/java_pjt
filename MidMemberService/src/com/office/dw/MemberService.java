@@ -4,7 +4,7 @@ public class MemberService {
 	
 	MemberDao memberDao = new MemberDao();
 
-	// SIGIN_UP
+	// SIGN_UP
 	public void doSignUp(MemberDto memberDto) {
 		System.out.println("[MemberService] doSignUp()");
 		
