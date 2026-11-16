@@ -8,7 +8,7 @@ public class MemberDao {
 	
 	HashMap<String, MemberDto> memberDB =  new HashMap<String, MemberDto>();
 
-	/ 새 회원을 아이디(memId)를 키로 해서 저장한다
+	// 새 회원을 아이디(memId)를 키로 해서 저장한다
 	public void insertNewMember(MemberDto memberDto) {
 		System.out.println("[MemberDao] insertNewMember()");
 		
@@ -16,7 +16,7 @@ public class MemberDao {
 		
 	}
 
-	/ 아이디로 회원 한 명을 찾아 돌려준다 (없으면 null)
+	// 아이디로 회원 한 명을 찾아 돌려준다 (없으면 null)
 	public MemberDto selectMemberDtoByMemId(String memId) {
 		System.out.println("[MemberDao] selectMemberDtoByMemId()");
 		
@@ -25,7 +25,7 @@ public class MemberDao {
 		
 	}
 
-	/ 같은 아이디로 다시 저장해서 메일·전화번호를 덮어쓴다
+	// 같은 아이디로 다시 저장해서 메일·전화번호를 덮어쓴다
 	public void updateMemberForMailAndPhone(MemberDto memberDto) {
 		System.out.println("[MemberDao] updateMemberForMailAndPhone()");
 		
@@ -33,7 +33,7 @@ public class MemberDao {
 		
 	}
 
-	/ 아이디에 해당하는 회원을 저장소에서 지운다
+	// 아이디에 해당하는 회원을 저장소에서 지운다
 	public void deleteMemberByMemId(String memId) {
 		System.out.println("[MemberDao] deleteMemberByMemId()");
 		
