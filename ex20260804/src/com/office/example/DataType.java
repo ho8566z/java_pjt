@@ -1,3 +1,5 @@
+// [요약] 데이터 타입(자료형)별 메모리 크기와 사용법을 정리한 파일
+// [요약] 데이터 타입(자료형)별 메모리 크기와 사용법을 정리한 파일
 package com.office.example;
 
 public class DataType {
