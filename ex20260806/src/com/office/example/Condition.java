@@ -1,3 +1,5 @@
+// [요약] if문 등 조건문 사용법을 정리한 파일
+// [요약] if문 등 조건문 사용법을 정리한 파일
 package com.office.example;
 
 import java.util.Scanner;
