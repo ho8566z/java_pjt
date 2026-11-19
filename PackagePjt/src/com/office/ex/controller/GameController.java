@@ -4,6 +4,10 @@ import java.util.Scanner;
 
 import com.office.ex.service.GameService;
 
+/**
+ * 콘솔 입력을 받아 게임 서비스의 기능을 고르는 컨트롤러.
+ * 1 을 입력하면 달리기, 2 를 입력하면 멈추기를 실행한다.
+ */
 public class GameController {
 	
 	public void execute() {
