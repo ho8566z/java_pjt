@@ -1,3 +1,5 @@
+// [요약] 연산자의 종류(산술 연산자 등)와 사용법을 정리한 파일
+// [요약] 연산자의 종류(산술 연산자 등)와 사용법을 정리한 파일
 package com.apple.office;
 
 public class Operator01 {
