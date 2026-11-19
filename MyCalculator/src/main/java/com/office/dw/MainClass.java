@@ -2,6 +2,10 @@ package com.office.dw;
 
 import org.springframework.context.support.GenericXmlApplicationContext;
 
+/**
+ * 스프링 컨테이너로 계산기를 조립해 실행하는 시작점.
+ * applicationContext.xml 에 등록된 CalAssembler 빈을 꺼내 사용한다.
+ */
 public class MainClass {
 	
 	public static void main(String[] args) {
