@@ -1,6 +1,9 @@
 package com.office.dw;
 
-// 계산기와 사칙연산 객체를 한곳에 모아 조립하는 클래스
+/**
+ * 계산기와 사칙연산 객체를 한곳에 모아 조립하는 클래스.
+ * 객체는 직접 만들지 않고 생성자로 주입받는다.
+ */
 public class CalAssembler {
 	
 	MyCalculator myCalculator;
