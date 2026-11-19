@@ -1,6 +1,9 @@
 package com.office.dw;
 
-// 회원 한 명의 정보를 담아 옮기는 데이터 객체(DTO)
+/**
+ * 회원 한 명의 정보를 담아 옮기는 데이터 객체(DTO).
+ * 아이디, 비밀번호, 메일, 전화번호를 필드로 가진다.
+ */
 public class MemberDto {
 	
 	String memId;
