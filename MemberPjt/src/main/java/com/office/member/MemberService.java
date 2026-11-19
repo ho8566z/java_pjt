@@ -3,6 +3,10 @@ package com.office.member;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
+/**
+ * 회원가입 요청을 처리하는 서비스.
+ * 요청에서 값을 꺼내 MemberDto 로 만들고 MemberDao 에 저장을 맡긴다.
+ */
 public class MemberService {
 	
 	// 회원 정보를 DB 에 저장하는 일은 MemberDao 에게 맡긴다
