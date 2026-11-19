@@ -1,5 +1,9 @@
 package com.office.example;
 
+/**
+ * 멤버 필드 실습 클래스.
+ * 객체를 만들어 name 필드 값을 출력한다.
+ */
 public class Example02 {
 	
 	// 멤버 필드
