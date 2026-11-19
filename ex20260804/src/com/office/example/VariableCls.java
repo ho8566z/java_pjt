@@ -1,3 +1,5 @@
+// [요약] 변수를 이용한 데이터 관리 방법을 정리한 파일
+// [요약] 변수를 이용한 데이터 관리 방법을 정리한 파일
 package com.office.example;
 
 public class VariableCls {
