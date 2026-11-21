@@ -5,8 +5,13 @@ import java.util.Scanner;
 import com.office.dbex.IConfig;
 import com.office.dbex.session.SessionClass;
 
+/**
+ * 콘솔 메뉴로 회원가입·로그인·정보 수정·탈퇴·로그아웃을 처리하는 컨트롤러.
+ * 로그인 상태(SessionClass)에 따라 보여 주는 메뉴가 달라진다.
+ */
 public class MemberController implements IMember, IConfig {
 	
+	/** 시스템 종료 번호(99)를 입력하기 전까지 메뉴를 반복하며, 고른 번호에 맞는 MemberService 기능을 호출한다. */
 	public void execute() {
 	
 		Scanner scanner = new Scanner(System.in);
@@ -15,6 +20,7 @@ public class MemberController implements IMember, IConfig {
 
 		while (systemFlag) {
 			
+			// 로그인 전에는 가입·로그인 메뉴, 로그인 후에는 수정·탈퇴·로그아웃 메뉴를 보여 준다
 			if (SessionClass.getInstance().getSignInedMemId() == null) {
 				System.out.println("1.SIGN_UP  2.SIGN_IN  99.SYSTEM_OUT");
 				
@@ -88,6 +94,7 @@ public class MemberController implements IMember, IConfig {
 				break;
 				
 			case MEMBER_MODIFY:
+				// 수정 대상은 로그인한 회원이다. 아이디는 입력받지 않고 MemberService 가 세션의 아이디로 채운다
 				
 				System.out.println("Please input new member PW");
 				memPw = scanner.nextLine();
