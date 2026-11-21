@@ -22,6 +22,10 @@ public class VaccineController extends HttpServlet {
     }
 
 
+	/**
+	 * 요청 주소에서 컨텍스트 경로를 뺀 명령(command)으로 등록 폼·등록 확인·목록·삭제 중 처리할 기능을 고른다.
+	 * 결과 화면으로는 forward 하고, 삭제는 처리 뒤 목록 주소로 redirect 한다.
+	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		String requestURI = request.getRequestURI();
@@ -91,11 +95,13 @@ public class VaccineController extends HttpServlet {
 	}
 
 
+	/** POST 로 온 한글 입력이 깨지지 않도록 UTF-8 로 설정한 뒤 doGet 과 같은 방식으로 처리한다. */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
 		doGet(request, response);
 	}
 	
+	/** 뷰 이름 앞뒤에 VIEW_PREFIX(views/), VIEW_SUFFIX(.jsp)를 붙여 화면 파일 경로를 만든다. */
 	private String generateView(String viewName) {
 
 		return VaccineConfig.VIEW_PREFIX
