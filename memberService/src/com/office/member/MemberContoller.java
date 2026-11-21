@@ -22,7 +22,7 @@ public class MemberContoller {
 		Scanner scanner = new Scanner(System.in);
 		
 		while (systemFlag) {
-			System.out.println("1.Sign-Up   2.Sign-In   3.Modify   4.Delete   5.System-Out");
+			System.out.println("1.Sign-Up   2.Sign-In   3.Modify   4.Delete   99.System-Out");
 			System.out.println("Please MENU NUMBER");
 			
 			int selectedMenuNumber = scanner.nextInt();
