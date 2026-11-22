@@ -1,5 +1,9 @@
 package com.office.ex;
 
+/**
+ * 아버지 중식당과 자식 중식당의 메뉴 만들기를 비교하는 시작점.
+ * 상속과 메서드 오버라이드가 어떻게 동작하는지 보여 준다.
+ */
 public class MainClass {
 	
 	public static void main(String[] args) {
