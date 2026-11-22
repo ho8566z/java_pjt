@@ -1,5 +1,9 @@
 package com.office.ex;
 
+/**
+ * 싱글톤 패턴 확인용 시작점.
+ * getInstance() 를 두 번 불러도 같은 객체가 돌아오고, 카운트가 공유됨을 보여 준다.
+ */
 public class MainClass {
 	
 	public static void main(String[] args) {
