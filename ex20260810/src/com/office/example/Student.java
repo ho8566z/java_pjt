@@ -1,5 +1,9 @@
 package com.office.example;
 
+/**
+ * 이름·학년·나이·전공을 가진 학생 클래스.
+ * 기본 생성자와 매개변수가 있는 생성자(오버로딩)로 객체를 초기화한다.
+ */
 public class Student {
 	
 	// 생성자(Constructor)	<- 기본 생성자(Default Constructor)
