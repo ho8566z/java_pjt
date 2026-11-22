@@ -1,5 +1,8 @@
 package com.office.example;
 
+/**
+ * Calculator 의 덧셈·뺄셈·곱셈·나눗셈 메서드를 차례로 호출해 보는 시작점.
+ */
 public class MainClass {
 	
 	public static void main(String[] args) {
