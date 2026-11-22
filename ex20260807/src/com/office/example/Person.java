@@ -1,5 +1,9 @@
 package com.office.example;
 
+/**
+ * 사람 클래스. 이름과 번호를 속성으로 가지고 걷기·뛰기 기능을 가진다.
+ * 메서드로 필드를 초기화하는 방법도 함께 보여 준다.
+ */
 public class Person {
 	
 	// 속성
