@@ -1,5 +1,9 @@
 package com.office.ex;
 
+/**
+ * 예외 처리(try ~ catch ~ finally) 실습의 시작점.
+ * 0 으로 나누는 예외가 나도 프로그램이 멈추지 않고 이어지는 흐름을 보여 준다.
+ */
 public class MainClass {
 	
 	public static void main(String[] args) {
