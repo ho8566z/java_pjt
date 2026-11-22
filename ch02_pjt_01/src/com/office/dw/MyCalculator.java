@@ -1,5 +1,9 @@
 package com.office.dw;
 
+/**
+ * 사칙연산 객체를 전달받아 계산을 맡기는 계산기.
+ * 연산마다 메서드를 만들지 않고 ICalculator 를 받는 전략 패턴을 쓴다.
+ */
 public class MyCalculator {
 	
 	/*
