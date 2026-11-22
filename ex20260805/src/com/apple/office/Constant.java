@@ -1,5 +1,9 @@
 package com.apple.office;
 
+/**
+ * 변수와 final 상수의 차이를 보여 주는 실습 클래스.
+ * 상수는 한 번만 초기화할 수 있고 값을 다시 바꿀 수 없다.
+ */
 public class Constant {
 
 	public static void main(String[] args) {
