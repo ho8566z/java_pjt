@@ -1,5 +1,9 @@
 package com.office.example;
 
+/**
+ * 생성자 오버로딩으로 OurStudent 객체를 만드는 실습 클래스.
+ * 매개변수의 개수에 따라 다른 생성자가 호출된다.
+ */
 public class Example002 {
 	
 	public static void main(String[] args) {
