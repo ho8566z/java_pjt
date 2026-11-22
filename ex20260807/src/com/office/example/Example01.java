@@ -2,6 +2,10 @@ package com.office.example;
 
 import java.util.Arrays;
 
+/**
+ * Cat 객체의 필드 사용과 static 메서드 호출 방법을 비교하는 실습 클래스.
+ * static 은 객체 없이 호출할 수 있지만 많이 쓰면 객체지향의 장점이 줄어든다.
+ */
 public class Example01 {
 	
 	public static void main(String[] args) {
