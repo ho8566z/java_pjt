@@ -1,5 +1,9 @@
 package com.office.ex.multiargs;
 
+/**
+ * 점수 배열의 총점과 평균을 구하는 실습의 시작점.
+ * TotalAverage 의 static 메서드를 객체 생성 없이 호출한다.
+ */
 public class MainClass {
 	
 	public static void main(String[] args) {
