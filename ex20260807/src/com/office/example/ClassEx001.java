@@ -1,5 +1,9 @@
 package com.office.example;
 
+/**
+ * 클래스에서 객체를 만들어 필드와 메서드를 사용하는 실습 클래스.
+ * Cat 과 Person 객체를 만들어 속성 출력과 동작 호출을 해 본다.
+ */
 public class ClassEx001 {
 	
 	public static void main(String[] args) {
