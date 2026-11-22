@@ -2,6 +2,9 @@ package com.office.example;
 
 import java.util.ArrayList;
 
+/**
+ * DwStudent 3명을 ArrayList 에 등록하고 이름으로 찾아 출력하는 실습 클래스.
+ */
 public class Example005 {
 	
 	public static void main(String[] args) {
