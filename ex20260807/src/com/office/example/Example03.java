@@ -1,5 +1,9 @@
 package com.office.example;
 
+/**
+ * 객체마다 자기 정보를 따로 가지는지 확인하는 실습 클래스.
+ * Students 객체를 두 개 만들어 각각 학번과 이름을 넣고 출력한다.
+ */
 public class Example03 {
 	
 	public static void main(String[] args) {
