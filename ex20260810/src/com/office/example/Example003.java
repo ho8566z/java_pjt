@@ -1,5 +1,8 @@
 package com.office.example;
 
+/**
+ * Car 객체를 만들어 주행·사양 출력·이동 거리 계산을 호출해 보는 실습 클래스.
+ */
 public class Example003 {
 	
 	public static void main(String[] args) {
