@@ -1,5 +1,9 @@
 package com.office.example;
 
+/**
+ * 생성자 초기화와 오버로딩을 확인하는 실습 클래스.
+ * 매개변수 없이, 또는 값을 넘겨 Student 객체를 만들어 출력한다.
+ */
 public class Example001 {
 	
 	public static void main(String[] args) {
