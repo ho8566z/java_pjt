@@ -15,26 +15,32 @@ public class AuthenticationDto {
       this.mail = mail;
    }
 
+   /** 아이디 값을 돌려준다. */
    public String getId() {
       return id;
    }
    
+   /** 아이디 값을 설정한다. */
    public void setId(String id) {
       this.id = id;
    }
    
+   /** 비밀번호 값을 돌려준다. */
    public String getPw() {
       return pw;
    }
    
+   /** 비밀번호 값을 설정한다. */
    public void setPw(String pw) {
       this.pw = pw;
    }
    
+   /** 메일 값을 돌려준다. */
    public String getMail() {
       return mail;
    }
    
+   /** 메일 값을 설정한다. */
    public void setMail(String mail) {
       this.mail = mail;
    }
