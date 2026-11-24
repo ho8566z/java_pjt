@@ -126,42 +126,52 @@ public class VaccineDto {
 		this.fvp_mod_date = fvp_mod_date;
 	}
 
+	/** 접종 장소 번호 값을 돌려준다. */
 	public String getFv_location_no() {
 		return fv_location_no;
 	}
 
+	/** 접종 장소 번호 값을 설정한다. */
 	public void setFv_location_no(String fv_location_no) {
 		this.fv_location_no = fv_location_no;
 	}
 
+	/** 접종 장소 이름 값을 돌려준다. */
 	public String getFv_location_name() {
 		return fv_location_name;
 	}
 
+	/** 접종 장소 이름 값을 설정한다. */
 	public void setFv_location_name(String fv_location_name) {
 		this.fv_location_name = fv_location_name;
 	}
 
+	/** 접종 장소 주소 값을 돌려준다. */
 	public String getFv_location_addr() {
 		return fv_location_addr;
 	}
 
+	/** 접종 장소 주소 값을 설정한다. */
 	public void setFv_location_addr(String fv_location_addr) {
 		this.fv_location_addr = fv_location_addr;
 	}
 
+	/** 접종 장소 전화번호 값을 돌려준다. */
 	public String getFv_location_phone() {
 		return fv_location_phone;
 	}
 
+	/** 접종 장소 전화번호 값을 설정한다. */
 	public void setFv_location_phone(String fv_location_phone) {
 		this.fv_location_phone = fv_location_phone;
 	}
 
+	/** 접종 장소 담당자 값을 돌려준다. */
 	public String getFv_location_manager() {
 		return fv_location_manager;
 	}
 
+	/** 접종 장소 담당자 값을 설정한다. */
 	public void setFv_location_manager(String fv_location_manager) {
 		this.fv_location_manager = fv_location_manager;
 	}
