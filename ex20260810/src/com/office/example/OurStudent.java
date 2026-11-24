@@ -69,6 +69,9 @@ public class OurStudent {
 	
 	
 	// 메서드
+	/**
+	 * 학생의 학년, 반, 번호, 이름, 휴학 여부를 한 줄씩 출력한다.
+	 */
 	public void printInfo() {
 		System.out.println("Grade : " + grade);
 		System.out.println("ClassNo : " + classNo);
