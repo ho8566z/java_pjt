@@ -1,5 +1,9 @@
 package com.office.example;
 
+/**
+ * 학생 한 명의 학년, 반, 번호, 이름, 휴학 여부를 담는 클래스.
+ * 학년 기본값은 1학년, 휴학 기본값은 false 이다.
+ */
 public class OurStudent {
 	
 	// 속성
