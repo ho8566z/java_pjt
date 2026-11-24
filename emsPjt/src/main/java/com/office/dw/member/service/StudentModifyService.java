@@ -27,6 +27,7 @@ public class StudentModifyService {
 
 	}
 	
+	/** 해당 학번의 학생이 있는지 확인한다. */
 	private boolean verify(String sNum) {
 		Student student = studentDao.select(sNum);
 		return student != null ? true : false;
