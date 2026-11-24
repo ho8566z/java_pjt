@@ -56,58 +56,72 @@ public class VaccineDto {
 		this.fvp_mod_date = fvp_mod_date;
 	}
 
+	/** 접종자 번호 값을 돌려준다. */
 	public int getFvp_no() {
 		return fvp_no;
 	}
 
+	/** 접종자 번호 값을 설정한다. */
 	public void setFvp_no(int fvp_no) {
 		this.fvp_no = fvp_no;
 	}
 
+	/** 접종자 이름 값을 돌려준다. */
 	public String getFvp_name() {
 		return fvp_name;
 	}
 
+	/** 접종자 이름 값을 설정한다. */
 	public void setFvp_name(String fvp_name) {
 		this.fvp_name = fvp_name;
 	}
 
+	/** 주민등록번호 값을 돌려준다. */
 	public String getSs_number() {
 		return ss_number;
 	}
 
+	/** 주민등록번호 값을 설정한다. */
 	public void setSs_number(String ss_number) {
 		this.ss_number = ss_number;
 	}
 
+	/** 접종자 메일 값을 돌려준다. */
 	public String getFvp_mail() {
 		return fvp_mail;
 	}
 
+	/** 접종자 메일 값을 설정한다. */
 	public void setFvp_mail(String fvp_mail) {
 		this.fvp_mail = fvp_mail;
 	}
 
+	/** 접종자 전화번호 값을 돌려준다. */
 	public String getFvp_phone() {
 		return fvp_phone;
 	}
 
+	/** 접종자 전화번호 값을 설정한다. */
 	public void setFvp_phone(String fvp_phone) {
 		this.fvp_phone = fvp_phone;
 	}
 
+	/** 접종자 등록일 값을 돌려준다. */
 	public String getFvp_reg_date() {
 		return fvp_reg_date;
 	}
 
+	/** 접종자 등록일 값을 설정한다. */
 	public void setFvp_reg_date(String fvp_reg_date) {
 		this.fvp_reg_date = fvp_reg_date;
 	}
 
+	/** 접종자 수정일 값을 돌려준다. */
 	public String getFvp_mod_date() {
 		return fvp_mod_date;
 	}
 
+	/** 접종자 수정일 값을 설정한다. */
 	public void setFvp_mod_date(String fvp_mod_date) {
 		this.fvp_mod_date = fvp_mod_date;
 	}
