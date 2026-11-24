@@ -67,6 +67,9 @@ public class MemberController extends HttpServlet {
 	}
 
 	
+	/**
+	 * 한글이 깨지지 않도록 인코딩을 utf-8 로 지정한 뒤 doGet 으로 처리를 넘긴다.
+	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");
 		doGet(request, response);
