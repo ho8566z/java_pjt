@@ -3,6 +3,9 @@ package com.office.member;
 import com.office.member.MemberDao;
 import com.office.member.MemberDto;
 
+/**
+ * 회원가입, 로그인, 수정, 삭제 절차를 처리하고 실제 저장은 MemberDao 에 맡기는 서비스 클래스.
+ */
 public class MemberService {
 	
 MemberDao memberDao = new MemberDao();
