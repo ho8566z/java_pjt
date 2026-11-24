@@ -11,6 +11,9 @@ public class MemberService {
 MemberDao memberDao = new MemberDao();
 	
 	// Sign-Up
+	/**
+	 * 입력받은 회원 정보를 MemberDao 에 넘겨 회원가입을 진행한다.
+	 */
 	public void doSignUp(MemberDto memberDto) {
 		System.out.println("[MemberSerive] doSignUp");
 		
