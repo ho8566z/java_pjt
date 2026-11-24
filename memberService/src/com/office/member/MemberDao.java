@@ -24,6 +24,12 @@ ArrayList<MemberDto> memberDB = new ArrayList<MemberDto>();
 	}
 
 	
+	/**
+	 * 아이디가 같은 회원을 찾아 돌려준다.
+	 * 
+	 * @param memId 찾을 회원 아이디
+	 * @return 찾은 회원 정보. 없으면 null
+	 */
 	public MemberDto selectMemberByMemId(String memId) {
 		System.out.println("[MemberDao] selectMemberByMemId()");
 		
