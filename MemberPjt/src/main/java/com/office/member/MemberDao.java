@@ -4,6 +4,9 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 
+/**
+ * 회원 정보를 MySQL(db_member)에 저장하는 DAO 클래스.
+ */
 public class MemberDao {
 
 	// 로컬 MySQL(db_member) 접속 정보
