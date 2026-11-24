@@ -14,6 +14,12 @@ public class MemberDao {
 	String user = "root";
 	String password = "1234";
 	
+	/**
+	 * 새 회원을 tbl_member 에 저장한다.
+	 * 
+	 * @param memberDto 저장할 회원 정보(아이디, 비밀번호, 메일, 전화번호)
+	 * @return 저장된 행 수. 오류가 나면 -1
+	 */
 	public int insertNewMember(MemberDto memberDto) {
 		System.out.println("[MemberDao] insertNewMember()");
 		
