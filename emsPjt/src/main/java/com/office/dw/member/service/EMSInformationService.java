@@ -38,98 +38,122 @@ public class EMSInformationService {
 		System.out.println("EMS INFORMATION END -------------");
 	}
 
+	/** EMS 소개 문구 값을 돌려준다. */
 	public String getInfo() {
 		return info;
 	}
 
+	/** EMS 소개 문구 값을 설정한다. */
 	public void setInfo(String info) {
 		this.info = info;
 	}
 
+	/** 저작권 문구 값을 돌려준다. */
 	public String getCopyRight() {
 		return copyRight;
 	}
 
+	/** 저작권 문구 값을 설정한다. */
 	public void setCopyRight(String copyRight) {
 		this.copyRight = copyRight;
 	}
 
+	/** 버전 값을 돌려준다. */
 	public String getVer() {
 		return ver;
 	}
 
+	/** 버전 값을 설정한다. */
 	public void setVer(String ver) {
 		this.ver = ver;
 	}
 
+	/** 개발 시작 년도 값을 돌려준다. */
 	public String getsYear() {
 		return sYear;
 	}
 
+	/** 개발 시작 년도 값을 설정한다. */
 	public void setsYear(String sYear) {
 		this.sYear = sYear;
 	}
 
+	/** 개발 시작 월 값을 돌려준다. */
 	public String getsMonth() {
 		return sMonth;
 	}
 
+	/** 개발 시작 월 값을 설정한다. */
 	public void setsMonth(String sMonth) {
 		this.sMonth = sMonth;
 	}
 
+	/** 개발 시작 일 값을 돌려준다. */
 	public String getsDay() {
 		return sDay;
 	}
 
+	/** 개발 시작 일 값을 설정한다. */
 	public void setsDay(String sDay) {
 		this.sDay = sDay;
 	}
 
+	/** 개발 종료 년도 값을 돌려준다. */
 	public String geteYear() {
 		return eYear;
 	}
 
+	/** 개발 종료 년도 값을 설정한다. */
 	public void seteYear(String eYear) {
 		this.eYear = eYear;
 	}
 
+	/** 개발 종료 월 값을 돌려준다. */
 	public String geteMonth() {
 		return eMonth;
 	}
 
+	/** 개발 종료 월 값을 설정한다. */
 	public void seteMonth(String eMonth) {
 		this.eMonth = eMonth;
 	}
 
+	/** 개발 종료 일 값을 돌려준다. */
 	public String geteDay() {
 		return eDay;
 	}
 
+	/** 개발 종료 일 값을 설정한다. */
 	public void seteDay(String eDay) {
 		this.eDay = eDay;
 	}
 
+	/** 개발자 이름 목록 값을 돌려준다. */
 	public List<String> getDevelopers() {
 		return developers;
 	}
 
+	/** 개발자 이름 목록 값을 설정한다. */
 	public void setDevelopers(List<String> developers) {
 		this.developers = developers;
 	}
 
+	/** 관리자 정보 값을 돌려준다. */
 	public Map<String, String> getAdministrators() {
 		return administrators;
 	}
 
+	/** 관리자 정보 값을 설정한다. */
 	public void setAdministrators(Map<String, String> administrators) {
 		this.administrators = administrators;
 	}
 
+	/** DB 이름별 접속 정보 값을 돌려준다. */
 	public Map<String, DBConnectionInfo> getDbInfos() {
 		return dbInfos;
 	}
 
+	/** DB 이름별 접속 정보 값을 설정한다. */
 	public void setDbInfos(Map<String, DBConnectionInfo> dbInfos) {
 		this.dbInfos = dbInfos;
 	}
