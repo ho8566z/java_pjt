@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 import com.office.ex.system.CoolingSystem;
 
+/**
+ * 냉방 시스템의 전원과 희망 온도를 메뉴로 선택해 조작하는 컨트롤러 클래스.
+ */
 public class CoolingController {
 	
 	private CoolingSystem coolingSystem;
