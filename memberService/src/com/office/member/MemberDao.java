@@ -4,6 +4,9 @@ import java.util.ArrayList;
 
 import com.office.member.MemberDto;
 
+/**
+ * 회원 정보를 ArrayList(memberDB)에 보관하는 메모리 기반 DAO 클래스.
+ */
 public class MemberDao {
 	
 ArrayList<MemberDto> memberDB = new ArrayList<MemberDto>();
