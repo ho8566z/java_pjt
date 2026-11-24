@@ -16,6 +16,9 @@ public class CoolingController {
 				
 	}
 	
+	/**
+	 * 메뉴(1.전원 켜기/끄기 2.온도 설정 3.종료)를 반복해서 보여 주고 선택한 기능을 실행한다.
+	 */
 	public void control() {
 		
 		Scanner scanner = new Scanner(System.in);
