@@ -14,6 +14,12 @@ public interface IMemberDao {
 
 	public MemberDto selectMemberByMemId(String memId);
 
+	/**
+	 * 회원 번호로 회원 정보를 수정한다.
+	 * 
+	 * @param memberDto 수정할 회원 정보
+	 * @return 수정된 행 수
+	 */
 	public int updateMemberByMemNo(MemberDto memberDto);
 
 }
