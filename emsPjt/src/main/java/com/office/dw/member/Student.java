@@ -25,58 +25,72 @@ public class Student {
 		this.sMajor = sMajor;
 	}
 
+	/** 학번 값을 돌려준다. */
 	public String getsNum() {
 		return sNum;
 	}
 
+	/** 학번 값을 설정한다. */
 	public void setsNum(String sNum) {
 		this.sNum = sNum;
 	}
 
+	/** 아이디 값을 돌려준다. */
 	public String getsId() {
 		return sId;
 	}
 
+	/** 아이디 값을 설정한다. */
 	public void setsId(String sId) {
 		this.sId = sId;
 	}
 
+	/** 비밀번호 값을 돌려준다. */
 	public String getsPw() {
 		return sPw;
 	}
 
+	/** 비밀번호 값을 설정한다. */
 	public void setsPw(String sPw) {
 		this.sPw = sPw;
 	}
 
+	/** 이름 값을 돌려준다. */
 	public String getsName() {
 		return sName;
 	}
 
+	/** 이름 값을 설정한다. */
 	public void setsName(String sName) {
 		this.sName = sName;
 	}
 
+	/** 나이 값을 돌려준다. */
 	public int getsAge() {
 		return sAge;
 	}
 
+	/** 나이 값을 설정한다. */
 	public void setsAge(int sAge) {
 		this.sAge = sAge;
 	}
 
+	/** 성별 값을 돌려준다. */
 	public char getsGender() {
 		return sGender;
 	}
 
+	/** 성별 값을 설정한다. */
 	public void setsGender(char sGender) {
 		this.sGender = sGender;
 	}
 
+	/** 전공 값을 돌려준다. */
 	public String getsMajor() {
 		return sMajor;
 	}
 
+	/** 전공 값을 설정한다. */
 	public void setsMajor(String sMajor) {
 		this.sMajor = sMajor;
 	}
