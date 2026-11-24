@@ -176,34 +176,42 @@ public class VaccineDto {
 		this.fv_location_manager = fv_location_manager;
 	}
 
+	/** 백신 종류 번호 값을 돌려준다. */
 	public int getFv_type_no() {
 		return fv_type_no;
 	}
 
+	/** 백신 종류 번호 값을 설정한다. */
 	public void setFv_type_no(int fv_type_no) {
 		this.fv_type_no = fv_type_no;
 	}
 
+	/** 백신 종류 값을 돌려준다. */
 	public String getFv_type() {
 		return fv_type;
 	}
 
+	/** 백신 종류 값을 설정한다. */
 	public void setFv_type(String fv_type) {
 		this.fv_type = fv_type;
 	}
 
+	/** 백신 제조 국가 값을 돌려준다. */
 	public String getFv_type_manuf_country() {
 		return fv_type_manuf_country;
 	}
 
+	/** 백신 제조 국가 값을 설정한다. */
 	public void setFv_type_manuf_country(String fv_type_manuf_country) {
 		this.fv_type_manuf_country = fv_type_manuf_country;
 	}
 
+	/** 백신 제조일 값을 돌려준다. */
 	public String getFv_type_manuf_date() {
 		return fv_type_manuf_date;
 	}
 
+	/** 백신 제조일 값을 설정한다. */
 	public void setFv_type_manuf_date(String fv_type_manuf_date) {
 		this.fv_type_manuf_date = fv_type_manuf_date;
 	}
