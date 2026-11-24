@@ -15,6 +15,7 @@ public class VaccineService {
 	
 	private VaccineDao vaccineDao = new VaccineDao();
 	
+	/** 요청 파라미터로 접종 정보를 만들어 등록하고 DAO 결과(등록 행 수)를 돌려준다. */
 	public int registeVaccineInjection(HttpServletRequest request, HttpServletResponse response) {
 		System.out.println(CLASS_NAME.concat("registeVaccineInjection()"));
 		
@@ -42,6 +43,7 @@ public class VaccineService {
 		
 	}
 
+	/** 접종 목록을 조회해 request 의 vaccineDtos 속성에 담는다. */
 	public void getVaccineInjections(HttpServletRequest request, HttpServletResponse response) {
 		System.out.println(CLASS_NAME.concat("getVaccineInjections()"));
 		
@@ -50,6 +52,7 @@ public class VaccineService {
 		
 	}
 
+	/** 요청 파라미터 fvp_no 에 해당하는 접종 정보를 삭제하고 삭제된 행 수를 돌려준다. */
 	public int removeVaccineInjectionByFvpNo(HttpServletRequest request, HttpServletResponse response) {
 		System.out.println(CLASS_NAME.concat("removeVaccineInjectionByFvpNo()"));
 		
