@@ -25,6 +25,7 @@ public class CoolingSystem {
 	// 기능(메서드)
 	// 에어컨의 전체 정보를 출력하는 메서드
 	
+	/** 전원, 희망 온도, 제조일, 색상을 한 번에 콘솔에 출력한다. */
 	public void printSystemInformation() {
 		
 		System.out.println("=========== SystemInformation ===========");
@@ -52,15 +53,18 @@ public class CoolingSystem {
 //		this.targetTemperature = targetTemperature;
 //	}
 	
+	/** 전원이 켜져 있는지 돌려준다. */
 	public boolean isPower() {
 		return power;
 	}
 
+	/** 전원을 켜거나 끈다. */
 	public void setPower(boolean power) {
 		this.power = power;
 	}
 	
 	
+	/** 현재 설정된 희망 온도를 돌려준다. */
 	public int getTargetTemperature() {
 		return targetTemperature;
 	}
@@ -86,6 +90,7 @@ public class CoolingSystem {
 	}	
 	
 
+	/** 객체를 만든 시점의 제조일 문자열을 돌려준다. */
 	public String getDateOfManufacture() {
 		return dateOfManufacture;
 	}
@@ -94,6 +99,7 @@ public class CoolingSystem {
 //		this.dateOfManufacture = dateOfManufacture;
 //	}
 
+	/** 색상을 돌려준다. */
 	public String getColor() {
 		return color;
 	}
