@@ -17,21 +17,25 @@ public class Greet {
 	}
 	*/
 	
+	/** 기본 인사말을 출력한다. */
 	public void printGreetWord() {
 		System.out.println("안녕하세요.");
 		
 	}
 	
+	/** 이름을 받아 "이름님, 안녕하세요." 를 출력한다. */
 	public void printGreetWord(String name) {
 		System.out.println(name + "님, 안녕하세요.");
 		
 	}
 	
+	/** 문자 하나를 이름처럼 받아 인사말을 출력한다. */
 	public void printGreetWord(char c) {
 		System.out.println(c + "님, 안녕하세요.");
 		
 	}
 	
+	/** 이름 뒤에 원하는 문구를 붙여 출력한다. */
 	public void printGreetWord(String name, String word) {
 		System.out.println(name + "님" + word);
 		
