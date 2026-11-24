@@ -10,6 +10,9 @@ import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
 @WebServlet("*.dw")
+/**
+ * 회원 관련 요청(*.dw)을 받아 서비스로 넘기고 결과 화면으로 이동시키는 서블릿.
+ */
 public class MemberController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
