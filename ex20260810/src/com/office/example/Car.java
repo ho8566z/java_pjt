@@ -39,17 +39,20 @@ public class Car {
 		
 	}
 	
+	/** 뒤로 간다. */
 	public void goBack() {
 //		this.goForward(); 			// <- 접근 제한자
 		System.out.println("goBack() called");
 		
 	}
 	
+	/** 멈춘다. */
 	public void doStop() {
 		System.out.println("doStop() called");
 		
 	}
 	
+	/** 전진, 후진, 정지를 차례로 실행해 본다. */
 	public void testDrive() {
 		goForward();
 		goBack();
@@ -57,6 +60,7 @@ public class Car {
 		
 	}
 	
+	/** language 가 kor 이면 한글로, 아니면 영어로 차량 제원을 출력한다. */
 	public void printCarSpec(String language) {
 		if (language.equals("kor")) {
 			printCarSpecForKor();
@@ -66,6 +70,7 @@ public class Car {
 		
 	}
 	
+	/** 길이, 가격, 배기량을 한글 단위로 출력한다. */
 	private void printCarSpecForKor() {
 		System.out.println("길이 : " + this.length + "센티미터");
 		System.out.println("가격 : " + this.price + "원");
@@ -73,6 +78,7 @@ public class Car {
 		
 	}
 	
+	/** 길이, 가격, 배기량을 영어 단위로 출력한다. */
 	private void printCarSpecForEng() {
 		System.out.println("length : " + this.length + "cm");
 		System.out.println("price : " + this.price + "won");
