@@ -1,5 +1,8 @@
 package mempjtcom.office.ex;
 
+/**
+ * 회원 DAO 가 지켜야 할 기능과 MySQL(db_member) 접속 상수를 정의한 인터페이스.
+ */
 public interface IMemberDao {
 	
 	final public String DRIVER = "com.mysql.cj.jdbc.Driver";
