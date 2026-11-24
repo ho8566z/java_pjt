@@ -21,6 +21,9 @@ MemberDao memberDao = new MemberDao();
 	}
 
 	// Sign-In
+	/**
+	 * 아이디가 존재하고 비밀번호가 같으면 로그인 성공, 아니면 실패 메시지를 출력한다.
+	 */
 	public void doSignIn(MemberDto memberDto) {
 		System.out.println("[MemberService] doSignIn");
 		
