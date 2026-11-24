@@ -22,6 +22,9 @@ public class MemberController extends HttpServlet {
     }
 
 	
+	/**
+	 * 요청 주소에서 명령(command)을 뽑아 해당 서비스를 실행하고, 결과에 맞는 JSP 로 포워딩한다.
+	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		String requestURI = request.getRequestURI();
