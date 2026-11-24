@@ -29,45 +29,59 @@ public class InitSampleData {
 	private char[] sGenders;
 	private String[] sMajors;
 	
+	/** 학번 샘플 배열을 돌려준다. */
 	public String[] getsNums() {
 		return sNums;
 	}
+	/** 학번 샘플 배열을 설정한다. */
 	public void setsNums(String[] sNums) {
 		this.sNums = sNums;
 	}
+	/** 아이디 샘플 배열을 돌려준다. */
 	public String[] getsIds() {
 		return sIds;
 	}
+	/** 아이디 샘플 배열을 설정한다. */
 	public void setsIds(String[] sIds) {
 		this.sIds = sIds;
 	}
+	/** 비밀번호 샘플 배열을 돌려준다. */
 	public String[] getsPws() {
 		return sPws;
 	}
+	/** 비밀번호 샘플 배열을 설정한다. */
 	public void setsPws(String[] sPws) {
 		this.sPws = sPws;
 	}
+	/** 이름 샘플 배열을 돌려준다. */
 	public String[] getsNames() {
 		return sNames;
 	}
+	/** 이름 샘플 배열을 설정한다. */
 	public void setsNames(String[] sNames) {
 		this.sNames = sNames;
 	}
+	/** 나이 샘플 배열을 돌려준다. */
 	public int[] getsAges() {
 		return sAges;
 	}
+	/** 나이 샘플 배열을 설정한다. */
 	public void setsAges(int[] sAges) {
 		this.sAges = sAges;
 	}
+	/** 성별 샘플 배열을 돌려준다. */
 	public char[] getsGenders() {
 		return sGenders;
 	}
+	/** 성별 샘플 배열을 설정한다. */
 	public void setsGenders(char[] sGenders) {
 		this.sGenders = sGenders;
 	}
+	/** 전공 샘플 배열을 돌려준다. */
 	public String[] getsMajors() {
 		return sMajors;
 	}
+	/** 전공 샘플 배열을 설정한다. */
 	public void setsMajors(String[] sMajors) {
 		this.sMajors = sMajors;
 	}
