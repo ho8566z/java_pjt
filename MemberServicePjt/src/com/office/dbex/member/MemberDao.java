@@ -70,6 +70,11 @@ public class MemberDao implements IMemberDao {
 	}
 
 	
+	/**
+	 * 아이디로 회원 한 명을 조회한다.
+	 * @param memberId 조회할 회원 아이디
+	 * @return 조회된 회원 정보. 없으면 null
+	 */
 	@Override
 	public MemberDto selectMemberByMemId(String memberId) {
 		System.out.println("[MemberDao] selectMemberByMemId()");
