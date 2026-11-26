@@ -106,16 +106,11 @@ public class CoolingSystem {
 	
 	// 현재 시스템 날짜, 시간 구하기 메서드
 	private String getSystemDateTime() {
-		
-		LocalDateTime now = LocalDateTime.now();	// 현재 시스템의 날짜와 시간 구하기
-		String dateTime = 
-				now.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
-				// 날짜와 시간 현식을 맞춤
-		
-		return dateTime;
-		
-		// 3번째 사진 참조 : 이미지 만들기
-		
+
+		// 현재 시스템의 날짜와 시간을 "yyyy-MM-dd HH:mm:ss" 형식 문자열로 만든다.
+		return LocalDateTime.now()
+				.format(DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss"));
+
 	}
 	
 }
