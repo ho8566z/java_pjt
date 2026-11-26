@@ -68,70 +68,59 @@ public class VaccineDao implements IVaccineDao {
 	public List<VaccineDto> selectVaccineInjections() {
 		System.out.println(CLASS_NAME.concat("selectVaccineInjections()"));
 		
-		Connection conn = null;
-		PreparedStatement pstmt = null;
-		ResultSet rs = null;
 		List<VaccineDto> vaccineDtos = new ArrayList<VaccineDto>();
-		
+
+		String sql =  "SELECT "
+						+ "* "
+					+ "FROM tbl_flu_vaccin_person fp "
+						+ "JOIN tbl_fv_location fl "
+							+ "ON fp.fv_location_no = fl.fv_location_no "
+						+ "JOIN tbl_fv_type ft "
+								+ "on fp.fv_type = ft.fv_type";
+
 		try {
 			Class.forName(DRIVER);
-			conn = DriverManager.getConnection(URL, USER, PASSWORD);
-			String sql =  "SELECT "
-							+ "* "
-						+ "FROM tbl_flu_vaccin_person fp "
-							+ "JOIN tbl_fv_location fl "
-								+ "ON fp.fv_location_no = fl.fv_location_no "
-							+ "JOIN tbl_fv_type ft "
-									+ "on fp.fv_type = ft.fv_type";
-			pstmt = conn.prepareStatement(sql);
-			rs = pstmt.executeQuery();
-			while (rs.next()) {
-				
-				VaccineDto vaccineDto = new VaccineDto();
-				
-				// tbl_flu_vaccin_person
-				vaccineDto.setFvp_no(rs.getInt("fvp_no"));
-				vaccineDto.setFvp_name(rs.getString("fvp_name"));
-				vaccineDto.setSs_number(rs.getString("ss_number"));
-				vaccineDto.setFvp_mail(rs.getString("fvp_mail"));
-				vaccineDto.setFvp_phone(rs.getString("fvp_phone"));
-				vaccineDto.setFvp_reg_date(rs.getString("fvp_reg_date"));
-				vaccineDto.setFvp_mod_date(rs.getString("fvp_mod_date"));
-				
-				// tbl_fv_location
-				vaccineDto.setFv_location_no(rs.getString("fv_location_no"));
-				vaccineDto.setFv_location_name(rs.getString("fv_location_name"));
-				vaccineDto.setFv_location_addr(rs.getString("fv_location_addr"));
-				vaccineDto.setFv_location_phone(rs.getString("fv_location_phone"));
-				vaccineDto.setFv_location_manager(rs.getString("fv_location_manager"));
-				
-				// fv_type
-				vaccineDto.setFv_type_no(rs.getInt("fv_type_no"));
-				vaccineDto.setFv_type(rs.getString("fv_type"));
-				vaccineDto.setFv_type_manuf_country(rs.getString("fv_type_manuf_country"));
-				vaccineDto.setFv_type_manuf_date(rs.getString("fv_type_manuf_date"));
-				
-				vaccineDtos.add(vaccineDto);
-				
+
+			// try-with-resources : 블록이 끝나면 rs, pstmt, conn 이 자동으로 닫힌다.
+			try (Connection conn = DriverManager.getConnection(URL, USER, PASSWORD);
+					PreparedStatement pstmt = conn.prepareStatement(sql);
+					ResultSet rs = pstmt.executeQuery()) {
+				while (rs.next()) {
+
+					VaccineDto vaccineDto = new VaccineDto();
+
+					// tbl_flu_vaccin_person
+					vaccineDto.setFvp_no(rs.getInt("fvp_no"));
+					vaccineDto.setFvp_name(rs.getString("fvp_name"));
+					vaccineDto.setSs_number(rs.getString("ss_number"));
+					vaccineDto.setFvp_mail(rs.getString("fvp_mail"));
+					vaccineDto.setFvp_phone(rs.getString("fvp_phone"));
+					vaccineDto.setFvp_reg_date(rs.getString("fvp_reg_date"));
+					vaccineDto.setFvp_mod_date(rs.getString("fvp_mod_date"));
+
+					// tbl_fv_location
+					vaccineDto.setFv_location_no(rs.getString("fv_location_no"));
+					vaccineDto.setFv_location_name(rs.getString("fv_location_name"));
+					vaccineDto.setFv_location_addr(rs.getString("fv_location_addr"));
+					vaccineDto.setFv_location_phone(rs.getString("fv_location_phone"));
+					vaccineDto.setFv_location_manager(rs.getString("fv_location_manager"));
+
+					// fv_type
+					vaccineDto.setFv_type_no(rs.getInt("fv_type_no"));
+					vaccineDto.setFv_type(rs.getString("fv_type"));
+					vaccineDto.setFv_type_manuf_country(rs.getString("fv_type_manuf_country"));
+					vaccineDto.setFv_type_manuf_date(rs.getString("fv_type_manuf_date"));
+
+					vaccineDtos.add(vaccineDto);
+
+				}
 			}
-			
+
 		} catch (Exception e) {
 			e.printStackTrace();
-			
-		} finally {
-			
-			try {
-				if (rs != null) rs.close();
-				if (pstmt != null) pstmt.close();
-				if (conn != null) conn.close();
-				
-			} catch (Exception e2) {
-				e2.printStackTrace();
-				
-			}
-			
+
 		}
-		 
+
 		return vaccineDtos;
 		
 	}
@@ -147,36 +136,28 @@ public class VaccineDao implements IVaccineDao {
 	public int deleteVaccineInjectionByFvpNo(int fvp_no) {
 		System.out.println(CLASS_NAME.concat("deleteVaccineInjectionByFvpNo()"));
 		
-		Connection conn = null;
-		PreparedStatement pstmt = null;
 		int result = -1;
-		
+
+		String sql = "DELETE FROM "
+						+ "tbl_flu_vaccin_person "
+					+ "WHERE "
+						+ "fvp_no = ?";
+
 		try {
 			Class.forName(DRIVER);
-			conn = DriverManager.getConnection(URL, USER, PASSWORD);
-			String sql = "DELETE FROM "
-							+ "tbl_flu_vaccin_person "
-						+ "WHERE "
-							+ "fvp_no = ?";
-			pstmt = conn.prepareStatement(sql);
-			pstmt.setInt(1, fvp_no);
-			result = pstmt.executeUpdate();
-					
+
+			// try-with-resources : 블록이 끝나면 pstmt, conn 이 자동으로 닫힌다.
+			try (Connection conn = DriverManager.getConnection(URL, USER, PASSWORD);
+					PreparedStatement pstmt = conn.prepareStatement(sql)) {
+				pstmt.setInt(1, fvp_no);
+				result = pstmt.executeUpdate();
+			}
+
 		} catch (Exception e) {
 			e.printStackTrace();
-			
-		} finally {
-			try {
-				if (pstmt != null) pstmt.close();
-				if (conn != null) conn.close();
-				
-			} catch (Exception e2) {
-				e2.printStackTrace();
-				
-			}
-			
+
 		}
-		
+
 		return result;
 	}
 
