@@ -129,6 +129,11 @@ public class MemberService implements IMember {
 		return result;
 	}
 
+	/**
+	 * 로그인한 회원을 삭제한다.
+	 * 세션에 저장된 로그인 아이디를 삭제 대상으로 사용한다.
+	 * @return 삭제된 행 수
+	 */
 	// DELETE
 	public int doRemove() {
 		System.out.println("[MemberService] doRemove()");
