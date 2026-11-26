@@ -1,5 +1,9 @@
 package com.office.dbex.member;
 
+/**
+ * 회원 테이블(db_member)에 접근하는 DAO 인터페이스.
+ * DB 접속 정보와 회원 등록, 조회, 수정, 삭제 메서드를 정의한다.
+ */
 public interface IMemberDao {
 	
 	// DB 접속에 쓰는 상수
