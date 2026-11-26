@@ -79,14 +79,8 @@ public class CoolingSystem {
 		
 		if (!power) power = true;
 		
-		if (targetTemperature < 18) {
-			targetTemperature = 18;
-			
-		} else if (targetTemperature > 30) {
-			targetTemperature = 30;
-		}
-		
-		this.targetTemperature = targetTemperature;
+		// 18 미만이면 18, 30 초과면 30 으로 보정
+		this.targetTemperature = Math.max(18, Math.min(30, targetTemperature));
 	}	
 	
 
