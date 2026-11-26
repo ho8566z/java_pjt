@@ -206,6 +206,11 @@ public class MemberDao implements IMemberDao {
 	}
 
 
+	/**
+	 * 아이디로 회원을 삭제한다.
+	 * @param memId 삭제할 회원 아이디
+	 * @return 삭제된 행 수. 실패하면 0 이하
+	 */
 	@Override
 	public int deleteMemberByMemId(String memId) {
 		System.out.println("[MemberDao] deleteMemberByMemId");
