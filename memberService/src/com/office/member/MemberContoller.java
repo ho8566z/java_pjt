@@ -5,6 +5,9 @@ import java.util.Scanner;
 import com.office.member.MemberDto;
 import com.office.member.MemberService;
 
+/**
+ * 콘솔 메뉴로 회원 가입, 로그인, 수정, 삭제를 선택해 실행하는 컨트롤러.
+ */
 public class MemberContoller {
 	
 	public void execute() {
