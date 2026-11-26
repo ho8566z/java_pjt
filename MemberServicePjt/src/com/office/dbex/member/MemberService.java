@@ -105,6 +105,12 @@ public class MemberService implements IMember {
 	
 	}
 
+	/**
+	 * 로그인한 회원의 정보를 수정한다.
+	 * 세션에 저장된 로그인 아이디를 수정 대상으로 사용한다.
+	 * @param memberDtoForModify 수정할 값이 담긴 회원 정보
+	 * @return 수정된 행 수
+	 */
 	// Modify
 	public int doModify(MemberDto memberDtoForModify) {
 		System.out.println("[MemberService] doModify()");
