@@ -2,6 +2,9 @@ package com.office.example;
 
 import java.util.Arrays;
 
+/**
+ * 배열의 선언, 값 접근, 메모리 배치를 연습하는 클래스.
+ */
 public class ArrayClass {
 
 	public static void main(String[] args) {
