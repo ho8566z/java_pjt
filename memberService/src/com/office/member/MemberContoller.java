@@ -10,6 +10,10 @@ import com.office.member.MemberService;
  */
 public class MemberContoller {
 	
+	/**
+	 * 메뉴를 반복해서 보여주고 입력 번호에 맞는 기능을 실행한다.
+	 * 99 를 입력하면 종료한다.
+	 */
 	public void execute() {
 		System.out.println("[MemberController] execute()");
 		
