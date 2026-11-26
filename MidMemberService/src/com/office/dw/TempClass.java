@@ -4,6 +4,9 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Vector;
 
+/**
+ * ArrayList, HashMap, Vector 의 기본 사용법을 확인하는 연습용 클래스.
+ */
 public class TempClass {
 	
 	public static void main(String[] args) {
