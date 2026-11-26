@@ -9,6 +9,11 @@ import java.util.ArrayList;
 
 public class MemberDao implements IMemberDao {
 	
+	/**
+	 * 새 회원을 TBL_MEMBER 에 저장한다.
+	 * @param memberDto 저장할 회원 정보(아이디, 비밀번호, 메일, 전화번호)
+	 * @return 저장된 행 수. 실패하면 0 이하
+	 */
 	@Override
 	public int insertNewMember(MemberDto memberDto) {
 		System.out.println("[MemberDao] insertNewMember()");
