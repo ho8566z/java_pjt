@@ -1,5 +1,4 @@
 // [요약] printf 형식 문자열 출력과 Scanner 입력을 연습하는 파일
-// [요약] printf 형식 문자열 출력과 Scanner 입력을 연습하는 파일
 package com.apple.office;
 
 import java.util.Scanner;
