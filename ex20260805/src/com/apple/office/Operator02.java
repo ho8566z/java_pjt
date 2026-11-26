@@ -1,5 +1,8 @@
 package com.apple.office;
 
+/**
+ * 비교 연산자(>, <, >=, <=, ==, !=)의 결과를 출력해 보는 연습용 클래스.
+ */
 public class Operator02 {
 
 	public static void main(String[] args) {
