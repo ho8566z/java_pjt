@@ -2,6 +2,9 @@ package com.apple.office;
 
 import java.util.Scanner;
 
+/**
+ * 출력과 입력 기본 문법을 연습하는 시작 클래스.
+ */
 public class MainClass {
 	
 	public static void main(String[] args) {
