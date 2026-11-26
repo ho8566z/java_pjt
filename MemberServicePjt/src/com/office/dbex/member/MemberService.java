@@ -18,6 +18,11 @@ public class MemberService implements IMember {
 		this.memberDao = iMemberDao;
 	}
 	
+	/**
+	 * 회원 가입을 처리한다.
+	 * @param memberDto 가입할 회원 정보
+	 * @return 가입된 행 수. 1 이면 성공, 0 이면 실패
+	 */
 	// Sign_Up
 	public int doSignUp(MemberDto memberDto) {
 		System.out.println("[MemberService] doSignUp()");
