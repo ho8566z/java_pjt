@@ -59,6 +59,11 @@ public class MemberService implements IMember {
 		return result;
 	}
 
+	/**
+	 * 로그인을 처리한다. 아이디로 회원을 찾은 뒤 비밀번호가 같은지 비교한다.
+	 * @param memberDto 로그인에 입력한 아이디와 비밀번호
+	 * @return 로그인 성공 여부
+	 */
 	// Sign_In
 	public boolean doSignIn(MemberDto memberDto) {
 		System.out.println("[MemberService] doSignIn()");
