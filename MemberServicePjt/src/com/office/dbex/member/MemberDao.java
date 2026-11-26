@@ -144,6 +144,11 @@ public class MemberDao implements IMemberDao {
 	}
 
 
+	/**
+	 * 회원 정보를 수정한다.
+	 * @param memberDto 수정할 값이 담긴 회원 정보(아이디로 대상을 찾는다)
+	 * @return 수정된 행 수. 실패하면 0 이하
+	 */
 	@Override
 	public int updateMember(MemberDto memberDto) {
 		System.out.println("[MemberDao] updateMember()");
