@@ -2,6 +2,10 @@ package com.office.dbex.member;
 
 import com.office.dbex.session.SessionClass;
 
+/**
+ * 회원 가입, 로그인, 수정, 삭제 흐름을 처리하는 서비스.
+ * DB 접근은 IMemberDao 구현체에 맡기고 결과에 따라 메시지를 출력한다.
+ */
 public class MemberService implements IMember {
 	/*
 	IMemberDao memberDao = new MemberDao();
