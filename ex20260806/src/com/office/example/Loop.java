@@ -2,6 +2,9 @@ package com.office.example;
 
 import java.util.Scanner;
 
+/**
+ * for 문과 while 문의 사용법을 연습하는 클래스.
+ */
 public class Loop {
 	
 	public static void main(String[] args) {
