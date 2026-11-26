@@ -24,45 +24,37 @@ public class VaccineDao implements IVaccineDao {
 	public int insertVaccineInjection(VaccineDto vaccineDto) {
 		System.out.println(CLASS_NAME.concat("insertVaccineInjection()"));
 		
-		Connection conn = null;
-		PreparedStatement pstmt = null;
 		int result = -1;
-		
+
+		String sql = "INSERT INTO tbl_flu_vaccin_person("
+						+ "fvp_name, "
+						+ "ss_number, "
+						+ "fvp_mail, "
+						+ "fvp_phone, "
+						+ "fv_location_no, "
+						+ "fv_type) "
+					+ "VALUES(?, ?, ?, ?, ?, ?)";
+
 		try {
 			Class.forName(DRIVER);
-			conn = DriverManager.getConnection(URL, USER, PASSWORD);
-			String sql = "INSERT INTO tbl_flu_vaccin_person("
-							+ "fvp_name, "
-							+ "ss_number, "
-							+ "fvp_mail, "
-							+ "fvp_phone, "
-							+ "fv_location_no, "
-							+ "fv_type) "
-						+ "VALUES(?, ?, ?, ?, ?, ?)";
-			pstmt = conn.prepareStatement(sql);
-			pstmt.setString(1, vaccineDto.getFvp_name());
-			pstmt.setString(2, vaccineDto.getSs_number());
-			pstmt.setString(3, vaccineDto.getFvp_mail());
-			pstmt.setString(4, vaccineDto.getFvp_phone());
-			pstmt.setString(5, vaccineDto.getFv_location_no());
-			pstmt.setString(6, vaccineDto.getFv_type());
-			result = pstmt.executeUpdate();
-					
+
+			// try-with-resources : 블록이 끝나면 pstmt, conn 이 자동으로 닫힌다.
+			try (Connection conn = DriverManager.getConnection(URL, USER, PASSWORD);
+					PreparedStatement pstmt = conn.prepareStatement(sql)) {
+				pstmt.setString(1, vaccineDto.getFvp_name());
+				pstmt.setString(2, vaccineDto.getSs_number());
+				pstmt.setString(3, vaccineDto.getFvp_mail());
+				pstmt.setString(4, vaccineDto.getFvp_phone());
+				pstmt.setString(5, vaccineDto.getFv_location_no());
+				pstmt.setString(6, vaccineDto.getFv_type());
+				result = pstmt.executeUpdate();
+			}
+
 		} catch (Exception e) {
 			e.printStackTrace();
-			
-		} finally {
-			try {
-				if (pstmt != null) pstmt.close();
-				if (conn != null) conn.close();
-				
-			} catch (Exception e2) {
-				e2.printStackTrace();
-				
-			}
-			
+
 		}
-		
+
 		return result;
 		
 	}
