@@ -12,6 +12,7 @@ public class MemberService {
 	// 회원 정보를 DB 에 저장하는 일은 MemberDao 에게 맡긴다
 	MemberDao memberDao = null;
 
+	/** 회원가입 폼 값으로 회원을 저장하고, 저장된 행 수를 돌려준다. */
 	public int memberRegistConfirm(HttpServletRequest request, HttpServletResponse response) {
 		System.out.println("[MemberService] memberRegistConfirm()");
 		
