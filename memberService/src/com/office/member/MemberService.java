@@ -48,6 +48,7 @@ MemberDao memberDao = new MemberDao();
 		
 	}
 
+	/** 회원 정보를 MemberDao 를 통해 수정한다. */
 	public void doModify(MemberDto memberDto) {
 		System.out.println("[memberDao] doModify");
 		
