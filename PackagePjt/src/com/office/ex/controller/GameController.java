@@ -10,6 +10,7 @@ import com.office.ex.service.GameService;
  */
 public class GameController {
 	
+	/** 입력한 번호에 맞는 GameService 기능을 실행한다. */
 	public void execute() {
 		
 		GameService gameService = new GameService();
