@@ -21,6 +21,7 @@ public class MemberController extends HttpServlet {
     }
 
 
+	/** 요청 주소에서 명령을 뽑아 해당 기능을 실행하고 알맞은 화면으로 보낸다. */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		StringBuffer stringBuffer = request.getRequestURL();
