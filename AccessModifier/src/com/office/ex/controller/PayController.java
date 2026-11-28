@@ -9,6 +9,7 @@ import com.office.ex.service.PayService;
  */
 public class PayController {
 	
+	/** 입력받은 월을 PayService 에 넘겨 급여를 지급하게 한다. */
 	public void execute() {
 		
 		Scanner scanner = new Scanner(System.in);
