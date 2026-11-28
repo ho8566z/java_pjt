@@ -5,6 +5,7 @@ package com.office.ex;
  */
 public class ParentClass {
 	
+	/** ABCDEF 문자열을 출력한다. */
 	public void print() {
 		System.out.println("ABCDEF");
 
