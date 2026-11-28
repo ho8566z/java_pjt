@@ -57,6 +57,7 @@ MemberDao memberDao = new MemberDao();
 		
 	}
 
+	/** 아이디로 회원을 찾아 비밀번호가 맞으면 삭제 성공, 아니면 실패를 출력한다. */
 	public void doDelete(MemberDto memberDto) {
 		System.out.println("[MemberService] doDelete");
 		
