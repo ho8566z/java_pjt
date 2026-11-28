@@ -32,6 +32,7 @@ public class StudentDao {
 		studentDB.remove(sNum);
 	}
 
+	/** 학번을 키로 학생 정보를 담아 둔 Map 을 돌려준다. */
 	public Map<String, Student> getStudentDB() {
 		return studentDB;
 	}
